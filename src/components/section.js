@@ -1,9 +1,12 @@
 import * as React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { section } from "./section.module.css"
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col"
 
 const Section = ({ id, bgcolor, children}) => {
     return (
-        <Row className={"justify-content-center p-3 " + bgcolor}>
+        <Row className={`justify-content-center py-5 ${bgcolor} ${section}`}>
             <Col>
                 <section id={id}>
                     <Container>
