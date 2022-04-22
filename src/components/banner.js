@@ -22,7 +22,7 @@ const Banner = () => {
                         </Row>
                         <Row className="justify-content-md-center pb-5">
                             <Col md="auto">
-                                <Button href="#contact" variant="primary">Book now</Button>
+                                <Button href="#book" variant="primary">Book now</Button>
                             </Col>
                         </Row>
                     </Container>

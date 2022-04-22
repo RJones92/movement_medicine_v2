@@ -21,7 +21,7 @@ export default function NavigationBar() {
                     <Nav.Link href="#about">About</Nav.Link>
                     <Nav.Link href="#services">Services</Nav.Link>
                     <Nav.Link href="#location">Contact</Nav.Link>
-                    <Nav.Link href="#price">Pricing</Nav.Link>
+                    <Nav.Link href="#book">Book Now</Nav.Link>
                     <Nav.Link href="#faq">FAQ</Nav.Link>
                   </Nav>
                 </Navbar.Collapse>
