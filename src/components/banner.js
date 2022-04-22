@@ -1,10 +1,9 @@
 import * as React from "react";
 import { titleText, bannerColor } from "./banner.module.css";
-import Section from "./section";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col"
-import { Container } from "react-bootstrap";
-import { Button } from "react-bootstrap";
+import Container from "react-bootstrap/Container";
+import Button from "react-bootstrap/Button";
 
 const Banner = () => {
     return (
