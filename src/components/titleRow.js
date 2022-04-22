@@ -6,7 +6,7 @@ import Col from "react-bootstrap/Col";
 export default function TitleRow({text}) {
   return (
     <Row className="justify-content-center align-items-center">
-        <Col md="auto">
+        <Col xs="auto">
             <h1 className={`${title} mb-5`}>{text}</h1>
         </Col>
     </Row>
