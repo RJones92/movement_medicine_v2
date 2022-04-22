@@ -9,20 +9,12 @@
 
 2.  **Install dependencies.**
 
-  Clone this repository, navigate to the directory and run `npm install`
-
-    ```shell
-    npm install 
-    ```
+    Clone this repository, navigate to the directory and run `npm install`
 
 3.  **Start development server.**
 
-    Navigate to the directory.
+    In the directory run `gatsby develop`
 
-    ```shell
-    gatsby develop
-    ```
-
-3.  **Open the code**
+3.  **Go to the site**
 
     Your site is now running at http://localhost:8000!
