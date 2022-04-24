@@ -7,6 +7,9 @@ import Col from "react-bootstrap/Col"
 import Banner from "../components/banner";
 import TitleRow from "../components/titleRow";
 import ServiceRow from "../components/serviceRow";
+import { StaticImage } from "gatsby-plugin-image";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPhone, faEnvelope, faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
 
 const IndexPage = () => {
   return (
@@ -47,15 +50,52 @@ const IndexPage = () => {
           <ServiceRow service1="Circulatory Problems" service2="Digestive Issues"></ServiceRow>
         </Section>
 
-        <Section id="location" bgcolor="bg-white">
-          <h1>Location</h1>
-        </Section>
-
-        <Section id="price" bgcolor="bg-light">
+        <Section id="price" bgcolor="bg-white">
           <h1>Price</h1>
         </Section>
 
-        <Section id="contact" bgcolor="bg-white">
+        <Section id="location" bgcolor="bg-light">
+          <TitleRow text="Find Us"></TitleRow>
+          <Row>
+            <Col>
+              <a href="https://www.google.com/maps/place/Duncan+Court,+22+Pallister+Rd,+Clacton-on-Sea+CO15+1PG/@51.7886192,1.1538294,17z/data=!3m1!4b1!4m5!3m4!1s0x47d96ccc0704389f:0x1fad504667380c74!8m2!3d51.7886192!4d1.1560181">
+                <StaticImage 
+                src="../images/map.png" 
+                alt="map"
+                layout="constrained"
+                placeholder="blurred" />
+              </a>
+            </Col>
+            <Col>
+            <Row className="pb-5">
+                <Col xs="2">
+                  <FontAwesomeIcon icon={faMapMarkerAlt} size="3x"></FontAwesomeIcon>
+                </Col>
+                <Col xs="10">
+                  22 Pallister Road, Clacton-on-Sea, CO15 1PG
+                </Col>
+              </Row>
+              <Row className="pb-5">
+                <Col xs="2">
+                  <FontAwesomeIcon icon={faPhone} size="3x"></FontAwesomeIcon>
+                </Col>
+                <Col xs="10">
+                  07922 448 380
+                </Col>
+              </Row>
+              <Row className="pb-5">
+                <Col xs="2">
+                  <FontAwesomeIcon icon={faEnvelope} size="3x"></FontAwesomeIcon> 
+                </Col>
+                <Col>
+                  anemailaddress@gmail.com
+                </Col>
+              </Row>
+            </Col>
+          </Row>
+        </Section>
+
+        <Section id="book" bgcolor="bg-white">
           <h1>Book</h1>
           <p>add contact form and phone number</p>
         </Section>

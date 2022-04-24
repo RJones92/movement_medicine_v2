@@ -3,5 +3,7 @@ module.exports = {
     title: `Movement Medicine`,
     siteUrl: `https://www.yourdomain.tld`,
   },
-  plugins: [],
+  plugins: [`gatsby-plugin-image`,
+  `gatsby-plugin-sharp`,
+  ],
 }

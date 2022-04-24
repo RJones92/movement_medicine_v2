@@ -18,10 +18,11 @@ export default function NavigationBar() {
                 <Navbar.Collapse id="basic-navbar-nav">
                   <Nav className="me-auto">
                     <Nav.Link href="#home">Home</Nav.Link>
-                    <Nav.Link href="#contact">Contact Us</Nav.Link>
+                    <Nav.Link href="#about">About</Nav.Link>
                     <Nav.Link href="#services">Services</Nav.Link>
-                    <Nav.Link href="#location">Find Us</Nav.Link>
                     <Nav.Link href="#price">Pricing</Nav.Link>
+                    <Nav.Link href="#location">Find Us</Nav.Link>
+                    <Nav.Link href="#book">Book</Nav.Link>
                     <Nav.Link href="#faq">FAQ</Nav.Link>
                   </Nav>
                 </Navbar.Collapse>
