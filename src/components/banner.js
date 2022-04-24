@@ -16,7 +16,7 @@ const Banner = () => {
                             <Col md="8" className={titleText}>
                                 <h1 className="display-1">Pallister Road Clinic</h1>
                                 <h2 className="display-6">Lead Osteopath Jamie Acres</h2>
-                                {/* <p>TODO: insert background color or image. insert Jamie's pic?</p>
+                                {/* <p>TODO: insert background image. insert Jamie's pic?</p>
                                 <p>https://www.gatsbyjs.com/plugins/gatsby-background-image/</p> */}
                             </Col>
                         </Row>
