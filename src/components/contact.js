@@ -4,11 +4,7 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 
 const ContactForm = () => {
-    // https://docs.getform.io/guides/gatsby/
-
     const [serverState, setServerState] = useState({submitting: false, status: null});
-    const formEndpoint = `${process.env.GATSBY_CONTACT_FORM_ENDPONT}`;
-    console.log(formEndpoint);
 
     const handleServerResponse = (ok, msg, form) => {
         setServerState({ submitting: false, status: { ok, msg } });
@@ -24,7 +20,7 @@ const ContactForm = () => {
         setServerState({ submitting: true });
         axios({
             method: "post",
-            url: formEndpoint,
+            url: process.env.GATSBY_CONTACT_FORM_ENDPONT,
             data: new FormData(form)
         })
         .then(r => {
