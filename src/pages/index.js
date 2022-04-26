@@ -10,7 +10,7 @@ import ServiceRow from "../components/serviceRow";
 import { StaticImage } from "gatsby-plugin-image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone, faEnvelope, faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
-import Contact from "../components/contact";
+import ContactForm from "../components/form/contactForm";
 
 const IndexPage = () => {
   return (
@@ -100,7 +100,7 @@ const IndexPage = () => {
             </Col>
           </Row>
           <Row>
-            <Contact />
+            <ContactForm />
           </Row>
         </Section>
 
