@@ -16,13 +16,11 @@ const Banner = () => {
                             <Col md="8" className={titleText}>
                                 <h1 className="display-1">Pallister Road Clinic</h1>
                                 <h2 className="display-6">Lead Osteopath Jamie Acres</h2>
-                                {/* <p>TODO: insert background image. insert Jamie's pic?</p>
-                                <p>https://www.gatsbyjs.com/plugins/gatsby-background-image/</p> */}
                             </Col>
                         </Row>
                         <Row className="justify-content-md-center pb-5">
                             <Col md="auto">
-                                <Button href="#book" variant="primary">Book now</Button>
+                                <Button href="#book" variant="primary">Contact us</Button>
                             </Col>
                         </Row>
                     </Container>

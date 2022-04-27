@@ -20,9 +20,8 @@ export default function NavigationBar() {
                     <Nav.Link href="#home">Home</Nav.Link>
                     <Nav.Link href="#about">About</Nav.Link>
                     <Nav.Link href="#services">Services</Nav.Link>
-                    <Nav.Link href="#location">Contact</Nav.Link>
-                    <Nav.Link href="#book">Book Now</Nav.Link>
-                    <Nav.Link href="#faq">FAQ</Nav.Link>
+                    <Nav.Link href="#location">Find Us</Nav.Link>
+                    <Nav.Link href="#book">Contact Us</Nav.Link>
                   </Nav>
                 </Navbar.Collapse>
               </Navbar>

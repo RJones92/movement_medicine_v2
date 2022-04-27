@@ -93,7 +93,7 @@ const IndexPage = () => {
         </Section>
 
         <Section id="book" bgcolor="bg-light">
-          <TitleRow text="Book" />
+          <TitleRow text="Contact Us" />
           <Row>
             <Col>
               <p>Appointments are £45 for 30 minutes.</p>
@@ -102,11 +102,6 @@ const IndexPage = () => {
           <Row>
             <ContactForm />
           </Row>
-        </Section>
-
-        <Section id="faq" bgcolor="bg-white">
-          <TitleRow text="FAQ" />
-          <p>FAQ - different page probably. Use gatsby's way of building pages</p>
         </Section>
 
         <Section id="footer" bgcolor="bg-secondary">
