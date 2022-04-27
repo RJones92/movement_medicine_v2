@@ -11,7 +11,7 @@ const Section = ({ id, bgcolor, children}) => {
                 <section id={id}>
                     <Container>
                         <Row className="justify-content-center align-items-center">
-                            <Col md="8">
+                            <Col xs="12" md="10" lg="8">
                                 {children}
                             </Col>
                         </Row>

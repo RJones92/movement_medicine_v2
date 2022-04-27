@@ -11,15 +11,14 @@ const Banner = () => {
             <Col>
                 <section id="home">
                     <Container>
-                        {/* <Row className="justify-content-md-center"> */}
                         <Row className="justify-content-center align-items-center pt-5">
-                            <Col md="8" className={titleText}>
+                            <Col xs="12" md="10" lg="8" className={titleText}>
                                 <h1 className="display-1">Pallister Road Clinic</h1>
                                 <h2 className="display-6">Lead Osteopath Jamie Acres</h2>
                             </Col>
                         </Row>
-                        <Row className="justify-content-md-center pb-5">
-                            <Col md="auto">
+                        <Row className="justify-content-center pb-5">
+                            <Col xs="auto">
                                 <Button href="#book" variant="primary">Contact us</Button>
                             </Col>
                         </Row>

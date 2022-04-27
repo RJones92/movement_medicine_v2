@@ -11,8 +11,8 @@ export default function NavigationBar() {
       <Col>
         <Container>
           <Row className="justify-content-center align-items-center">
-            <Col md="8">
-              <Navbar expand="lg">
+            <Col xs="12" md="10" lg="8">
+              <Navbar expand="md">
                 <Navbar.Brand href="#home">Pallister Road Clinic </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
