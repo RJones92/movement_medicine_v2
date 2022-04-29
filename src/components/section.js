@@ -1,17 +1,16 @@
 import * as React from "react";
-import { section } from "./section.module.css"
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col"
 
 const Section = ({ id, bgcolor, children}) => {
     return (
-        <Row className={`justify-content-center py-5 ${bgcolor} ${section}`}>
+        <Row id={id} className={`justify-content-center py-5 ${bgcolor}`}>
             <Col>
-                <section id={id}>
+                <section>
                     <Container>
                         <Row className="justify-content-center align-items-center">
-                            <Col md="8">
+                            <Col xs="12" md="10" lg="8">
                                 {children}
                             </Col>
                         </Row>
