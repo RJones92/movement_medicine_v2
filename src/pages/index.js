@@ -15,10 +15,9 @@ import ContactForm from "../components/form/contactForm";
 const IndexPage = () => {
   return (
     <div>
+      <NavigationBar />
       <Container fluid>
-        <NavigationBar />
         <Banner />
-
         <Section id="about" bgcolor="bg-white">
           <TitleRow text="About" />
           <Row>

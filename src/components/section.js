@@ -5,9 +5,9 @@ import Col from "react-bootstrap/Col"
 
 const Section = ({ id, bgcolor, children}) => {
     return (
-        <Row className={`justify-content-center py-5 ${bgcolor}`}>
+        <Row id={id} className={`justify-content-center py-5 ${bgcolor}`}>
             <Col>
-                <section id={id}>
+                <section>
                     <Container>
                         <Row className="justify-content-center align-items-center">
                             <Col xs="12" md="10" lg="8">
