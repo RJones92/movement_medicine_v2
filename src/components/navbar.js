@@ -1,3 +1,4 @@
+import { Link } from 'gatsby';
 import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -7,24 +8,59 @@ export default function NavigationBar() {
   return (
     <Navbar expand='md' bg='light' sticky='top'>
       <Container>
-        <Navbar.Brand href='/index#home'>Pallister Road Clinic</Navbar.Brand>
+        <Navbar.Brand href='/'>Pallister Road Clinic</Navbar.Brand>
         <Navbar.Toggle aria-controls='navbar-nav' />
         <Navbar.Collapse id='navbar-nav'>
-          <Nav className='ms-auto'>
-            <Nav.Item>
-              <Nav.Link href='/#home'>Home</Nav.Link>
+          <Nav className='ms-auto' as='ul'>
+            <Nav.Item as='li' eventKey='/#home'>
+              <Link
+                to='/#home'
+                key='home'
+                className='nav-link'
+                activeClassName='active'
+              >
+                Home
+              </Link>
             </Nav.Item>
-            <Nav.Item>
-              <Nav.Link href='/#about'>About</Nav.Link>
+            <Nav.Item as='li' eventKey='/#about'>
+              <Link
+                to='/#about'
+                key='about'
+                className='nav-link'
+                activeClassName='active'
+              >
+                About
+              </Link>
             </Nav.Item>
-            <Nav.Item>
-              <Nav.Link href='/#services'>Services</Nav.Link>
+            <Nav.Item as='li' eventKey='/#services'>
+              <Link
+                to='/#services'
+                key='services'
+                className='nav-link'
+                activeClassName='active'
+              >
+                Services
+              </Link>
             </Nav.Item>
-            <Nav.Item>
-              <Nav.Link href='/#location'>Find Us</Nav.Link>
+            <Nav.Item as='li' eventKey='/#location'>
+              <Link
+                to='/#location'
+                key='location'
+                className='nav-link'
+                activeClassName='active'
+              >
+                Find Us
+              </Link>
             </Nav.Item>
-            <Nav.Item>
-              <Nav.Link href='/#book'>Contact Us</Nav.Link>
+            <Nav.Item as='li' eventKey='/#book'>
+              <Link
+                to='/#book'
+                key='book'
+                className='nav-link'
+                activeClassName='active'
+              >
+                Contact Us
+              </Link>
             </Nav.Item>
           </Nav>
         </Navbar.Collapse>
