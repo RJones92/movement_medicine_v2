@@ -1,6 +1,8 @@
 
 ## Development environment
 
+Built using NodeJS v16.5.0
+
 1.  **Install Gatsby CLI.**
 
     ```shell
