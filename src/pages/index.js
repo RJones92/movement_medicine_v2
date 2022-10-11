@@ -27,95 +27,103 @@ const IndexPage = () => {
           <TitleRow text='Services' />
           <Row xs='2' md='3'>
             <Col className='my-3'>
-              <Link to='/service-backache'>
+              <Link to='/service-sciatica'>
                 <Card className='text-center'>
                   <StaticImage
                     src='../images/backache-1620045.jpg'
-                    alt='backache'
+                    alt='sciatica'
                     layout='constrained'
                     placeholder='blurred'
                   />
                   <Card.Body>
-                    <Card.Text>Back Pain</Card.Text>
+                    <Card.Text>Sciatica</Card.Text>
                   </Card.Body>
                 </Card>
               </Link>
             </Col>
             <Col className='my-3'>
-              <Link to='/service-kneepain' href='404'>
+              <Link to='/services/backpain'>
                 <Card className='text-center'>
                   <StaticImage
                     src='../images/backache-1620045.jpg'
-                    alt='backache'
+                    alt='back pain'
                     layout='constrained'
                     placeholder='blurred'
                   />
                   <Card.Body>
-                    <Card.Text>Knee Pain</Card.Text>
+                    <Card.Text>Back & neck pain</Card.Text>
                   </Card.Body>
                 </Card>
               </Link>
             </Col>
             <Col className='my-3'>
-              <a href='404'>
+              <Link to='/service-arthritis'>
                 <Card className='text-center'>
                   <StaticImage
                     src='../images/backache-1620045.jpg'
-                    alt='backache'
+                    alt='arthritis'
                     layout='constrained'
                     placeholder='blurred'
                   />
                   <Card.Body>
-                    <Card.Text>Leg Pain</Card.Text>
+                    <Card.Text>Arthritis</Card.Text>
                   </Card.Body>
                 </Card>
-              </a>
+              </Link>
             </Col>
             <Col className='my-3'>
-              <a href='404'>
+              <Link to='service-shoulderpain'>
                 <Card className='text-center'>
                   <StaticImage
                     src='../images/backache-1620045.jpg'
-                    alt='backache'
+                    alt='shoulder pain'
                     layout='constrained'
                     placeholder='blurred'
                   />
                   <Card.Body>
-                    <Card.Text>x Pain</Card.Text>
+                    <Card.Text>Shoulder pain</Card.Text>
                   </Card.Body>
                 </Card>
-              </a>
+              </Link>
             </Col>
             <Col className='my-3'>
-              <a href='404'>
+              <Link to='service-trappednerves'>
                 <Card className='text-center'>
                   <StaticImage
                     src='../images/backache-1620045.jpg'
-                    alt='backache'
+                    alt='trapped nerves'
                     layout='constrained'
                     placeholder='blurred'
                   />
                   <Card.Body>
-                    <Card.Text>y Pain</Card.Text>
+                    <Card.Text>Trapped nerves</Card.Text>
                   </Card.Body>
                 </Card>
-              </a>
+              </Link>
             </Col>
             <Col className='my-3'>
-              <a href='404'>
+              <Link to='service-injuryrehab'>
                 <Card className='text-center'>
                   <StaticImage
                     src='../images/backache-1620045.jpg'
-                    alt='backache'
+                    alt='injury rehabilitation'
                     layout='constrained'
                     placeholder='blurred'
                   />
                   <Card.Body>
-                    <Card.Text>z Pain</Card.Text>
+                    <Card.Text>Injury rehabilitation</Card.Text>
                   </Card.Body>
                 </Card>
-              </a>
+              </Link>
             </Col>
+          </Row>
+          <Row className='my-3'>
+            <p>
+              We are able to help and treat a much wider variety of problems
+              than above. If you are not sure if we can help you with your
+              problem, please call or contact us and we can advise you before
+              making a booking.
+            </p>
           </Row>
         </Section>
 

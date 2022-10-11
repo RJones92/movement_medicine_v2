@@ -1,9 +1,13 @@
 import * as React from 'react';
-import Service from '../components/service';
+import Service from '../../components/service';
 
 const ServiceBackachePage = () => {
   return (
-    <Service bannerTitle='Back ache' id='backache' bgcolor='bg-white'>
+    <Service
+      bannerTitle='Back Pain & Kneck Pain'
+      id='backpain'
+      bgcolor='bg-white'
+    >
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
