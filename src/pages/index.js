@@ -19,39 +19,11 @@ const IndexPage = () => {
   return (
     <div>
       <Layout
-        bannerTitle='Pallister Road Clinic'
+        bannerTitle='Clacton Osteopathy & Physiotherapy Clinic'
         bannerSubTitle='Lead Osteopath Jamie Acres'
         contactUsButtonVisible
       >
-        <Section id='about' bgcolor='bg-white'>
-          <TitleRow text='About' />
-          <Row>
-            <Col>
-              <p>
-                My training and experience enables me to accurately diagnose and
-                provide the best possible treatment for your problem.
-              </p>
-              <p>
-                Your treatment will be complemented through my experience as a
-                qualified fitness instructor, enhancing the treatment through
-                the most appropriate rehabilitation and self care exercises to
-                increase your time to recovery.
-              </p>
-              <p>
-                &#10004; Qualified osteopath
-                <br />
-                &#10004; Qualified fitness instructor
-                <br />
-                &#10004; Fully insured
-                <br />
-                &#10004; Registered with Governing Body for Osteopaths
-                <br />
-              </p>
-            </Col>
-          </Row>
-        </Section>
-
-        <Section id='services' bgcolor='bg-light'>
+        <Section id='services' bgcolor='bg-white'>
           <TitleRow text='Services' />
           <Row xs='2' md='3'>
             <Col className='my-3'>
@@ -147,7 +119,7 @@ const IndexPage = () => {
           </Row>
         </Section>
 
-        <Section id='location' bgcolor='bg-white'>
+        <Section id='location' bgcolor='bg-light'>
           <TitleRow text='Find Us' />
           <Row className='gy-5'>
             <Col xs='12' lg='6'>
@@ -183,7 +155,7 @@ const IndexPage = () => {
           </Row>
         </Section>
 
-        <Section id='book' bgcolor='bg-light'>
+        <Section id='book' bgcolor='bg-white'>
           <TitleRow text='Contact Us' />
           <Row>
             <Col>

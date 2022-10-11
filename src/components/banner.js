@@ -17,7 +17,7 @@ const Banner = ({ title, subtitle, contactUsButtonVisible }) => {
     );
   } else {
     bannerText = (
-      <Col xs='auto' className={titleText}>
+      <Col xs='12' md='10' lg='8' className={titleText}>
         <h1 className='display-1'>{title}</h1>
       </Col>
     );
@@ -35,7 +35,7 @@ const Banner = ({ title, subtitle, contactUsButtonVisible }) => {
               <Row className='justify-content-center pb-5'>
                 <Col xs='auto'>
                   <Button href='#book' variant='primary'>
-                    Contact us
+                    Book now
                   </Button>
                 </Col>
               </Row>
