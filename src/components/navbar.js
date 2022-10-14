@@ -22,14 +22,14 @@ export default function NavigationBar() {
                 Home
               </Link>
             </Nav.Item>
-            <Nav.Item as='li' eventKey='/#about'>
+            <Nav.Item as='li' eventKey='/faq'>
               <Link
-                to='/#about'
-                key='about'
+                to='/faq'
+                key='faq'
                 className='nav-link'
                 activeClassName='active'
               >
-                About
+                FAQ
               </Link>
             </Nav.Item>
             <Nav.Item as='li' eventKey='/#services'>

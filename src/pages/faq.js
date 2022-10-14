@@ -3,7 +3,11 @@ import Service from '../components/service';
 
 const ServiceBackachePage = () => {
   return (
-    <Service bannerTitle='Back ache' id='backache' bgcolor='bg-white'>
+    <Service
+      bannerTitle='Frequently Asked Questions'
+      id='faq'
+      bgcolor='bg-white'
+    >
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim

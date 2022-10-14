@@ -3,7 +3,7 @@ import { titleText, bannerColor } from './banner.module.css';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
-import Button from 'react-bootstrap/Button';
+import BookNowButton from './button/booknow';
 
 const Banner = ({ title, subtitle, contactUsButtonVisible }) => {
   let bannerText;
@@ -17,7 +17,7 @@ const Banner = ({ title, subtitle, contactUsButtonVisible }) => {
     );
   } else {
     bannerText = (
-      <Col xs='auto' className={titleText}>
+      <Col xs='12' md='10' lg='8' className={titleText}>
         <h1 className='display-1'>{title}</h1>
       </Col>
     );
@@ -34,9 +34,7 @@ const Banner = ({ title, subtitle, contactUsButtonVisible }) => {
             {contactUsButtonVisible ? (
               <Row className='justify-content-center pb-5'>
                 <Col xs='auto'>
-                  <Button href='#book' variant='primary'>
-                    Contact us
-                  </Button>
+                  <BookNowButton />
                 </Col>
               </Row>
             ) : null}
