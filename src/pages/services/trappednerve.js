@@ -21,7 +21,6 @@ const TrappedNervePage = () => {
         will write to your GP if we think it would benefit you to have a certain
         prescription.
       </p>
-      <p>INSERT BUTTON</p>
       <p>
         <small>
           *Nerves are very rarely truly "trapped". In reality there is often
