@@ -51,7 +51,7 @@ const IndexPage = () => {
                     placeholder='blurred'
                   />
                   <Card.Body>
-                    <Card.Text>Back & neck pain</Card.Text>
+                    <Card.Text>Back Pain & Neck Pain</Card.Text>
                   </Card.Body>
                 </Card>
               </Link>
@@ -81,7 +81,7 @@ const IndexPage = () => {
                     placeholder='blurred'
                   />
                   <Card.Body>
-                    <Card.Text>Shoulder pain</Card.Text>
+                    <Card.Text>Shoulder Pain</Card.Text>
                   </Card.Body>
                 </Card>
               </Link>
@@ -96,7 +96,7 @@ const IndexPage = () => {
                     placeholder='blurred'
                   />
                   <Card.Body>
-                    <Card.Text>Trapped nerves</Card.Text>
+                    <Card.Text>Trapped Nerves</Card.Text>
                   </Card.Body>
                 </Card>
               </Link>
@@ -111,7 +111,7 @@ const IndexPage = () => {
                     placeholder='blurred'
                   />
                   <Card.Body>
-                    <Card.Text>Injury rehabilitation</Card.Text>
+                    <Card.Text>Injury Rehabilitation</Card.Text>
                   </Card.Body>
                 </Card>
               </Link>

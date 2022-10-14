@@ -19,6 +19,8 @@ const InjuryRehabPage = () => {
         how long you can expect the recovery to take. An assessment will also
         help to answer the following questions, and help you to get your body
         healing as quickly as possible:
+      </p>
+      <p>
         <ul>
           <li>Is it safe to carry on using the affected part of your body?</li>
           <li>Should you use hot or cold packs?</li>
