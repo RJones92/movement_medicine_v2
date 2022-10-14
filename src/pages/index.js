@@ -27,7 +27,7 @@ const IndexPage = () => {
           <TitleRow text='Services' />
           <Row xs='2' md='3'>
             <Col className='my-3'>
-              <Link to='/service-sciatica'>
+              <Link to='/services/sciatica'>
                 <Card className='text-center'>
                   <StaticImage
                     src='../images/backache-1620045.jpg'
@@ -57,7 +57,7 @@ const IndexPage = () => {
               </Link>
             </Col>
             <Col className='my-3'>
-              <Link to='/service-arthritis'>
+              <Link to='/services/arthritis'>
                 <Card className='text-center'>
                   <StaticImage
                     src='../images/backache-1620045.jpg'
@@ -72,7 +72,7 @@ const IndexPage = () => {
               </Link>
             </Col>
             <Col className='my-3'>
-              <Link to='service-shoulderpain'>
+              <Link to='/services/shoulderpain'>
                 <Card className='text-center'>
                   <StaticImage
                     src='../images/backache-1620045.jpg'
@@ -87,7 +87,7 @@ const IndexPage = () => {
               </Link>
             </Col>
             <Col className='my-3'>
-              <Link to='service-trappednerves'>
+              <Link to='/services/trappednerve'>
                 <Card className='text-center'>
                   <StaticImage
                     src='../images/backache-1620045.jpg'
@@ -102,7 +102,7 @@ const IndexPage = () => {
               </Link>
             </Col>
             <Col className='my-3'>
-              <Link to='service-injuryrehab'>
+              <Link to='/services/injuryrehab'>
                 <Card className='text-center'>
                   <StaticImage
                     src='../images/backache-1620045.jpg'
