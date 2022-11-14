@@ -29,7 +29,7 @@ export default function NavigationBar() {
                 className='nav-link'
                 activeClassName='active'
               >
-                FAQ
+                FAQs
               </Link>
             </Nav.Item>
             <Nav.Item as='li' eventKey='/#services'>
