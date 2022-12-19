@@ -11,7 +11,6 @@ import {
   faEnvelope,
   faMapMarkerAlt,
 } from '@fortawesome/free-solid-svg-icons';
-import ContactForm from '../components/form/contactForm';
 import { Link } from 'gatsby';
 import Layout from '../components/layout';
 
@@ -23,7 +22,7 @@ const IndexPage = () => {
         bannerSubTitle='Lead Osteopath Jamie Acres'
         contactUsButtonVisible
       >
-        <Section id='services' bgcolor='bg-white'>
+        <Section id='services' bgcolor='bg-light'>
           <TitleRow text='Services' />
           <Row xs='2' md='3'>
             <Col className='my-3'>
@@ -127,7 +126,7 @@ const IndexPage = () => {
           </Row>
         </Section>
 
-        <Section id='location' bgcolor='bg-light'>
+        <Section id='location' bgcolor='bg-white'>
           <TitleRow text='Find Us' />
           <Row className='gy-5'>
             <Col xs='12' lg='6'>
@@ -160,18 +159,6 @@ const IndexPage = () => {
                 <Col>anemailaddress@gmail.com</Col>
               </Row>
             </Col>
-          </Row>
-        </Section>
-
-        <Section id='book' bgcolor='bg-white'>
-          <TitleRow text='Contact Us' />
-          <Row>
-            <Col>
-              <p>Appointments are £45 for 30 minutes.</p>
-            </Col>
-          </Row>
-          <Row>
-            <ContactForm />
           </Row>
         </Section>
       </Layout>
