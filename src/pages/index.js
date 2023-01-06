@@ -169,8 +169,8 @@ const IndexPage = () => {
                   <FontAwesomeIcon icon={faEnvelope} size='3x' />
                 </Col>
                 <Col>
-                  <a href='mailto:anemailaddress@gmail.com'>
-                    anemailaddress@gmail.com
+                  <a href='mailto:contact@clacton-osteopathy-and-physiotherapy.co.uk'>
+                    contact@clacton-osteopathy-and-physiotherapy.co.uk
                   </a>
                 </Col>
               </Row>
