@@ -17,11 +17,7 @@ import Layout from '../components/layout';
 const IndexPage = () => {
   return (
     <div>
-      <Layout
-        bannerTitle='Clacton Osteopathy & Physiotherapy Clinic'
-        bannerSubTitle='Lead Osteopath Jamie Acres'
-        contactUsButtonVisible
-      >
+      <Layout contactUsButtonVisible>
         <Section id='services' bgcolor='bg-light'>
           <TitleRow text='Services' />
           <Row xs='2' md='3'>
