@@ -6,7 +6,7 @@ import Container from 'react-bootstrap/Container';
 import BookNowButton from './button/booknow';
 import { StaticImage } from 'gatsby-plugin-image';
 
-const Banner = ({ title, contactUsButtonVisible }) => {
+const Banner = ({ title, contactUsButtonVisible, id }) => {
   let bannerText;
 
   if (title) {
@@ -17,7 +17,7 @@ const Banner = ({ title, contactUsButtonVisible }) => {
     );
 
     return (
-      <section id='home'>
+      <section id={id}>
         <div style={{ display: 'grid' }} className='row'>
           <StaticImage
             style={{
@@ -36,7 +36,7 @@ const Banner = ({ title, contactUsButtonVisible }) => {
             }}
           >
             <Row
-              id={title}
+              id={id}
               className={`justify-content-center align-items-center`}
             >
               <Col>

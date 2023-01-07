@@ -4,7 +4,7 @@ import NavigationBar from './navbar';
 import Banner from './banner';
 import Footer from './footer';
 
-const Layout = ({ children, bannerTitle, contactUsButtonVisible }) => {
+const Layout = ({ children, bannerTitle, contactUsButtonVisible, id }) => {
   return (
     <div>
       <NavigationBar />
@@ -12,6 +12,7 @@ const Layout = ({ children, bannerTitle, contactUsButtonVisible }) => {
         <Banner
           title={bannerTitle}
           contactUsButtonVisible={contactUsButtonVisible}
+          id={id}
         />
         {children}
         <Footer />
