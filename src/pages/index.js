@@ -13,6 +13,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'gatsby';
 import Layout from '../components/layout';
+import ContactWidget from '../components/contactWidget';
 
 const IndexPage = () => {
   return (
@@ -146,34 +147,21 @@ const IndexPage = () => {
                   </a>
                 </Col>
               </Row>
-              <Row className='pb-3'>
-                <Col xs='2'>
-                  <FontAwesomeIcon icon={faMapMarkerAlt} size='3x' />
-                </Col>
-                <Col xs='10'>
-                  <a href='https://www.google.com/maps/place/Duncan+Court,+22+Pallister+Rd,+Clacton-on-Sea+CO15+1PG/@51.7886192,1.1538294,17z/data=!3m1!4b1!4m5!3m4!1s0x47d96ccc0704389f:0x1fad504667380c74!8m2!3d51.7886192!4d1.1560181'>
-                    22 Pallister Road, Clacton-on-Sea, CO15 1PG
-                  </a>
-                </Col>
-              </Row>
-              <Row className='pb-3'>
-                <Col xs='2'>
-                  <FontAwesomeIcon icon={faPhone} size='3x' />
-                </Col>
-                <Col xs='10'>
-                  <a href='tel:+07922448380'>07922 448 380</a>
-                </Col>
-              </Row>
-              <Row className='pb-3'>
-                <Col xs='2'>
-                  <FontAwesomeIcon icon={faEnvelope} size='3x' />
-                </Col>
-                <Col>
-                  <a href='mailto:contact@clacton-osteopathy-and-physiotherapy.co.uk'>
-                    contact@clacton-osteopathy-and-physiotherapy.co.uk
-                  </a>
-                </Col>
-              </Row>
+              <ContactWidget
+                widgetIcon={<FontAwesomeIcon icon={faMapMarkerAlt} size='3x' />}
+                widgetText='22 Pallister Road, Clacton-on-Sea, CO15 1PG'
+                widgetUrl='https://www.google.com/maps/place/Duncan+Court,+22+Pallister+Rd,+Clacton-on-Sea+CO15+1PG/@51.7886192,1.1538294,17z/data=!3m1!4b1!4m5!3m4!1s0x47d96ccc0704389f:0x1fad504667380c74!8m2!3d51.7886192!4d1.1560181'
+              />
+              <ContactWidget
+                widgetIcon={<FontAwesomeIcon icon={faPhone} size='3x' />}
+                widgetText='07922 448 380'
+                widgetUrl='tel:+07922448380'
+              />
+              <ContactWidget
+                widgetIcon={<FontAwesomeIcon icon={faEnvelope} size='3x' />}
+                widgetText='contact@clacton-osteopathy-and-physiotherapy.co.uk'
+                widgetUrl='mailto:contact@clacton-osteopathy-and-physiotherapy.co.uk'
+              />
             </Col>
           </Row>
         </Section>
