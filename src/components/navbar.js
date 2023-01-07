@@ -52,16 +52,6 @@ export default function NavigationBar() {
                 Find Us
               </Link>
             </Nav.Item>
-            <Nav.Item as='li' eventKey='/#book'>
-              <Link
-                to='/#book'
-                key='book'
-                className='nav-link'
-                activeClassName='active'
-              >
-                Contact Us
-              </Link>
-            </Nav.Item>
           </Nav>
         </Navbar.Collapse>
       </Container>
