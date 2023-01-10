@@ -1,48 +1,77 @@
 import * as React from 'react';
-import { titleText, bannerColor } from './banner.module.css';
+import { bannerColor } from './banner.module.css';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import BookNowButton from './button/booknow';
+import { StaticImage } from 'gatsby-plugin-image';
 
-const Banner = ({ title, subtitle, contactUsButtonVisible }) => {
+const Banner = ({ title, contactUsButtonVisible, id }) => {
   let bannerText;
 
-  if (subtitle) {
+  if (title) {
     bannerText = (
-      <Col xs='12' md='10' lg='8' className={titleText}>
+      <Col xs='12' md='10' lg='8'>
         <h1 className='display-1'>{title}</h1>
-        <h2 className='display-6'>{subtitle}</h2>
       </Col>
+    );
+
+    return (
+      <section id={id}>
+        <div style={{ display: 'grid' }} className='row'>
+          <StaticImage
+            style={{
+              gridArea: '1/1',
+            }}
+            layout='fullWidth'
+            alt=''
+            src='../images/banner-no-text.png'
+            formats={['auto']}
+          />
+          <div
+            style={{
+              gridArea: '1/1', // By using the same grid area for both, they are stacked on top of each other
+              position: 'relative',
+              display: 'grid',
+            }}
+          >
+            <Row
+              id={id}
+              className={`justify-content-center align-items-center`}
+            >
+              <Col>
+                <Container>
+                  <Row className='justify-content-center align-items-center'>
+                    {bannerText}
+                  </Row>
+                </Container>
+              </Col>
+            </Row>
+          </div>
+        </div>
+      </section>
     );
   } else {
-    bannerText = (
-      <Col xs='12' md='10' lg='8' className={titleText}>
-        <h1 className='display-1'>{title}</h1>
-      </Col>
+    return (
+      <section id='home'>
+        <Row className={bannerColor + ' pt-5'}>
+          <StaticImage
+            src='../images/banner.jpg'
+            alt='Clacton osteopathy and physiotherapy clinic'
+            layout='constrained'
+            placeholder='blurred'
+          />
+          {contactUsButtonVisible ? (
+            <Row className='justify-content-center pt-2 pb-3'>
+              <Col xs='auto'>
+                <BookNowButton />
+              </Col>
+            </Row>
+          ) : null}
+        </Row>
+      </section>
     );
   }
-
-  return (
-    <Row className={bannerColor + ' p-3'}>
-      <Col>
-        <section id='home'>
-          <Container>
-            <Row className='justify-content-center align-items-center pt-5'>
-              {bannerText}
-            </Row>
-            {contactUsButtonVisible ? (
-              <Row className='justify-content-center pb-5'>
-                <Col xs='auto'>
-                  <BookNowButton />
-                </Col>
-              </Row>
-            ) : null}
-          </Container>
-        </section>
-      </Col>
-    </Row>
-  );
 };
 
 export default Banner;

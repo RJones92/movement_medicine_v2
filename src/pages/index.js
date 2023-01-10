@@ -11,19 +11,15 @@ import {
   faEnvelope,
   faMapMarkerAlt,
 } from '@fortawesome/free-solid-svg-icons';
-import ContactForm from '../components/form/contactForm';
 import { Link } from 'gatsby';
 import Layout from '../components/layout';
+import ContactWidget from '../components/contactWidget';
 
 const IndexPage = () => {
   return (
     <div>
-      <Layout
-        bannerTitle='Clacton Osteopathy & Physiotherapy Clinic'
-        bannerSubTitle='Lead Osteopath Jamie Acres'
-        contactUsButtonVisible
-      >
-        <Section id='services' bgcolor='bg-white'>
+      <Layout contactUsButtonVisible>
+        <Section id='services' bgcolor='bg-light'>
           <TitleRow text='Services' />
           <Row xs='2' md='3'>
             <Col className='my-3'>
@@ -127,51 +123,46 @@ const IndexPage = () => {
           </Row>
         </Section>
 
-        <Section id='location' bgcolor='bg-light'>
+        <Section id='location' bgcolor='bg-white'>
           <TitleRow text='Find Us' />
           <Row className='gy-5'>
             <Col xs='12' lg='6'>
-              <a href='https://www.google.com/maps/place/Duncan+Court,+22+Pallister+Rd,+Clacton-on-Sea+CO15+1PG/@51.7886192,1.1538294,17z/data=!3m1!4b1!4m5!3m4!1s0x47d96ccc0704389f:0x1fad504667380c74!8m2!3d51.7886192!4d1.1560181'>
-                <StaticImage
-                  src='../images/map.png'
-                  alt='map'
-                  layout='constrained'
-                  placeholder='blurred'
-                />
-              </a>
+              <StaticImage
+                src='../images/building.jpg'
+                alt='map'
+                layout='constrained'
+                placeholder='blurred'
+              />
             </Col>
             <Col xs='12' lg='6'>
-              <Row className='pb-5'>
-                <Col xs='2'>
-                  <FontAwesomeIcon icon={faMapMarkerAlt} size='3x' />
+              <Row className='pb-3'>
+                <Col>
+                  <a href='https://www.google.com/maps/place/Duncan+Court,+22+Pallister+Rd,+Clacton-on-Sea+CO15+1PG/@51.7886192,1.1538294,17z/data=!3m1!4b1!4m5!3m4!1s0x47d96ccc0704389f:0x1fad504667380c74!8m2!3d51.7886192!4d1.1560181'>
+                    <StaticImage
+                      src='../images/map.png'
+                      alt='map'
+                      layout='constrained'
+                      placeholder='blurred'
+                    />
+                  </a>
                 </Col>
-                <Col xs='10'>22 Pallister Road, Clacton-on-Sea, CO15 1PG</Col>
               </Row>
-              <Row className='pb-5'>
-                <Col xs='2'>
-                  <FontAwesomeIcon icon={faPhone} size='3x' />
-                </Col>
-                <Col xs='10'>07922 448 380</Col>
-              </Row>
-              <Row className='pb-5'>
-                <Col xs='2'>
-                  <FontAwesomeIcon icon={faEnvelope} size='3x' />
-                </Col>
-                <Col>anemailaddress@gmail.com</Col>
-              </Row>
+              <ContactWidget
+                widgetIcon={<FontAwesomeIcon icon={faMapMarkerAlt} size='3x' />}
+                widgetText='22 Pallister Road, Clacton-on-Sea, CO15 1PG'
+                widgetUrl='https://www.google.com/maps/place/Duncan+Court,+22+Pallister+Rd,+Clacton-on-Sea+CO15+1PG/@51.7886192,1.1538294,17z/data=!3m1!4b1!4m5!3m4!1s0x47d96ccc0704389f:0x1fad504667380c74!8m2!3d51.7886192!4d1.1560181'
+              />
+              <ContactWidget
+                widgetIcon={<FontAwesomeIcon icon={faPhone} size='3x' />}
+                widgetText='07922 448 380'
+                widgetUrl='tel:+07922448380'
+              />
+              <ContactWidget
+                widgetIcon={<FontAwesomeIcon icon={faEnvelope} size='3x' />}
+                widgetText='contact@clacton-osteopathy-and-physiotherapy.co.uk'
+                widgetUrl='mailto:contact@clacton-osteopathy-and-physiotherapy.co.uk'
+              />
             </Col>
-          </Row>
-        </Section>
-
-        <Section id='book' bgcolor='bg-white'>
-          <TitleRow text='Contact Us' />
-          <Row>
-            <Col>
-              <p>Appointments are £45 for 30 minutes.</p>
-            </Col>
-          </Row>
-          <Row>
-            <ContactForm />
           </Row>
         </Section>
       </Layout>
