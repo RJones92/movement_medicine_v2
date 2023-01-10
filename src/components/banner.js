@@ -42,9 +42,7 @@ const Banner = ({ title, contactUsButtonVisible, id }) => {
               <Col>
                 <Container>
                   <Row className='justify-content-center align-items-center'>
-                    <Col xs='12' md='10' lg='8'>
-                      {bannerText}
-                    </Col>
+                    {bannerText}
                   </Row>
                 </Container>
               </Col>

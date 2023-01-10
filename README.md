@@ -1,6 +1,6 @@
 ## Development environment
 
-Built using NodeJS v18.13.0, NPM v8.19.3, Gatsby CLI v5.3.1.
+Built using NodeJS v18.13.0 and NPM v8.19.3.
 
 1.  **Install Gatsby CLI.**
 
