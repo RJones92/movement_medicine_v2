@@ -54,20 +54,21 @@ const Banner = ({ title, contactUsButtonVisible, id }) => {
   } else {
     return (
       <section id='home'>
-        <Row className={bannerColor + ' pt-5'}>
+        <Row>
           <StaticImage
             src='../images/banner.jpg'
             alt='Clacton osteopathy and physiotherapy clinic'
             layout='constrained'
             placeholder='blurred'
           />
-          {contactUsButtonVisible ? (
-            <Row className='justify-content-center pt-2 pb-3'>
-              <Col xs='auto'>
-                <BookNowButton />
-              </Col>
-            </Row>
-          ) : null}
+        </Row>
+        {contactUsButtonVisible ? (
+          <Row className='justify-content-center pt-2 pb-3 bg-light'>
+            <Col xs='auto'>
+              <BookNowButton />
+            </Col>
+          </Row>
+        ) : null}
         </Row>
       </section>
     );
