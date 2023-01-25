@@ -69,7 +69,6 @@ const Banner = ({ title, contactUsButtonVisible, id }) => {
             </Col>
           </Row>
         ) : null}
-        </Row>
       </section>
     );
   }
