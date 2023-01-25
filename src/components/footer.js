@@ -14,9 +14,11 @@ const Footer = ({ children, bannerTitle, contactUsButtonVisible }) => {
                 <Row className='justify-content-between'>
                   <Col>
                     <p>
-                      <a href='#' style={{ color: 'inherit' }}>
-                        Privacy policy (PDF)
-                      </a>
+                      <small>
+                        <a href='#' style={{ color: 'inherit' }}>
+                          Privacy policy (PDF)
+                        </a>
+                      </small>
                     </p>
                   </Col>
                   <Col xs='3' lg='2'>
