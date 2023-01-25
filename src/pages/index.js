@@ -14,12 +14,14 @@ import {
 import { Link } from 'gatsby';
 import Layout from '../components/layout';
 import ContactWidget from '../components/contactWidget';
+import HorizontalRule from '../components/horizontalRule';
 
 const IndexPage = () => {
   return (
     <div>
       <Layout contactUsButtonVisible>
-        <Section id='services' bgcolor='bg-light'>
+        <HorizontalRule />
+        <Section id='services' bgcolor='bg-white'>
           <TitleRow text='Services' />
           <Row xs='2' md='3'>
             <Col className='my-3'>
@@ -122,7 +124,7 @@ const IndexPage = () => {
             </p>
           </Row>
         </Section>
-
+        <HorizontalRule />
         <Section id='location' bgcolor='bg-white'>
           <TitleRow text='Find Us' />
           <Row className='gy-5'>

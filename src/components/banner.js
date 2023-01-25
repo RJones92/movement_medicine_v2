@@ -63,7 +63,7 @@ const Banner = ({ title, contactUsButtonVisible, id }) => {
           />
         </Row>
         {contactUsButtonVisible ? (
-          <Row className='justify-content-center pt-2 pb-3 bg-light'>
+          <Row className='justify-content-center pt-3 pb-5 bg-white'>
             <Col xs='auto'>
               <BookNowButton />
             </Col>
