@@ -3,8 +3,8 @@ import { bannerColor } from './banner.module.css';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
-import BookNowButton from './button/booknow';
 import { StaticImage } from 'gatsby-plugin-image';
+import ContactNowButtons from './button/contactNowButtons';
 
 const Banner = ({ title, contactUsButtonVisible, id }) => {
   let bannerText;
@@ -65,7 +65,7 @@ const Banner = ({ title, contactUsButtonVisible, id }) => {
         {contactUsButtonVisible ? (
           <Row className='justify-content-center pt-3 pb-5 bg-white'>
             <Col xs='auto'>
-              <BookNowButton />
+              <ContactNowButtons />
             </Col>
           </Row>
         ) : null}
