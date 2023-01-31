@@ -11,8 +11,17 @@ const Footer = ({ children, bannerTitle, contactUsButtonVisible }) => {
           <Container>
             <Row className='justify-content-center align-items-center'>
               <Col xs='12' md='10' lg='8'>
-                <Row xs='5' md='5' lg='6' className='justify-content-end'>
+                <Row className='justify-content-between'>
                   <Col>
+                    <p>
+                      <small>
+                        <a href='#' style={{ color: 'inherit' }}>
+                          Privacy policy (PDF)
+                        </a>
+                      </small>
+                    </p>
+                  </Col>
+                  <Col xs='3' lg='2'>
                     <StaticImage
                       src='../images/Im_Registered_Mark_10013.jpg'
                       alt="I'm Registered Mark, 10013"

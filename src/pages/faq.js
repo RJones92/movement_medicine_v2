@@ -37,6 +37,8 @@ const ServiceBackachePage = () => {
               session.
             </p>
             <ul>
+              <li>Osteopathy</li>
+              <li>Corrective Exercise Prescription </li>
               <li>Swedish soft tissue massage</li>
               <li>Deep tissue / sports massage</li>
               <li>Joint mobilisations and muscle stretching</li>
@@ -63,7 +65,7 @@ const ServiceBackachePage = () => {
             Following a thorough assessment and discussion about your medical
             history, we can advise if you should avoid a particular treatment
             modality. However, most forms of manual therapy are relatively safe.
-            IF you have a particular concern please contact us before booking
+            If you have a particular concern please contact us before booking
             and we can discuss the safety over the telephone.
           </Accordion.Body>
         </Accordion.Item>

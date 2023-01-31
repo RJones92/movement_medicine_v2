@@ -14,12 +14,14 @@ import {
 import { Link } from 'gatsby';
 import Layout from '../components/layout';
 import ContactWidget from '../components/contactWidget';
+import HorizontalRule from '../components/horizontalRule';
 
 const IndexPage = () => {
   return (
     <div>
       <Layout contactUsButtonVisible>
-        <Section id='services' bgcolor='bg-light'>
+        <HorizontalRule />
+        <Section id='services' bgcolor='bg-white'>
           <TitleRow text='Services' />
           <Row xs='2' md='3'>
             <Col className='my-3'>
@@ -122,7 +124,7 @@ const IndexPage = () => {
             </p>
           </Row>
         </Section>
-
+        <HorizontalRule />
         <Section id='location' bgcolor='bg-white'>
           <TitleRow text='Find Us' />
           <Row className='gy-5'>
@@ -151,16 +153,19 @@ const IndexPage = () => {
                 widgetIcon={<FontAwesomeIcon icon={faMapMarkerAlt} size='3x' />}
                 widgetText='22 Pallister Road, Clacton-on-Sea, CO15 1PG'
                 widgetUrl='https://www.google.com/maps/place/Duncan+Court,+22+Pallister+Rd,+Clacton-on-Sea+CO15+1PG/@51.7886192,1.1538294,17z/data=!3m1!4b1!4m5!3m4!1s0x47d96ccc0704389f:0x1fad504667380c74!8m2!3d51.7886192!4d1.1560181'
+                newTab={true}
               />
               <ContactWidget
                 widgetIcon={<FontAwesomeIcon icon={faPhone} size='3x' />}
                 widgetText='07922 448 380'
                 widgetUrl='tel:+07922448380'
+                newTab={false}
               />
               <ContactWidget
                 widgetIcon={<FontAwesomeIcon icon={faEnvelope} size='3x' />}
                 widgetText='contact@clacton-osteopathy-and-physiotherapy.co.uk'
                 widgetUrl='mailto:contact@clacton-osteopathy-and-physiotherapy.co.uk'
+                newTab={false}
               />
             </Col>
           </Row>

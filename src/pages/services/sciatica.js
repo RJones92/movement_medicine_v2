@@ -17,8 +17,7 @@ const SciaticaPage = () => {
       <p>
         Treatment can help lower your symptoms, and following an assessment will
         be able to give you an understanding of what is causing your sciatica,
-        and what can be done to help your recovery. Back pain and Neck pain
-        combined is the most common reason to take time
+        and what can be done to help your recovery.
       </p>
     </Service>
   );
