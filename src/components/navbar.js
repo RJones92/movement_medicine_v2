@@ -8,7 +8,7 @@ export default function NavigationBar() {
   return (
     <Navbar expand='md' bg='light' sticky='top'>
       <Container>
-        <Navbar.Brand href='/'>Pallister Road Clinic</Navbar.Brand>
+        <Navbar.Brand href='/'>COP Clinic</Navbar.Brand>
         <Navbar.Toggle aria-controls='navbar-nav' />
         <Navbar.Collapse id='navbar-nav'>
           <Nav className='ms-auto' as='ul'>
