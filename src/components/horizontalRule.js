@@ -6,6 +6,7 @@ const HorizontalRule = () => {
       style={{
         width: '70%',
         margin: 'auto',
+        borderTop: '3px solid',
       }}
     />
   );
