@@ -54,13 +54,24 @@ const Banner = ({ title, contactUsButtonVisible, id }) => {
   } else {
     return (
       <section id='home'>
-        <Row>
-          <StaticImage
-            src='../images/banner.jpg'
-            alt='Clacton osteopathy and physiotherapy clinic'
-            layout='constrained'
-            placeholder='blurred'
-          />
+        <Row
+          className={
+            bannerColor + ' p-3 justify-content-center align-items-center'
+          }
+        >
+          <Col className='px-4' xs='12' md='8' lg='8'>
+            <h1 className='display-2'>
+              Clacton Osteopathy & Physiotherapy Clinic
+            </h1>
+          </Col>
+          <Col xs='8' md='4' lg='4'>
+            <StaticImage
+              src='../images/New-Final-Logo.png'
+              alt='Clacton osteopathy and physiotherapy clinic'
+              layout='constrained'
+              placeholder='blurred'
+            />
+          </Col>
         </Row>
         {contactUsButtonVisible ? (
           <Row className='justify-content-center pt-3 pb-5 bg-white'>
