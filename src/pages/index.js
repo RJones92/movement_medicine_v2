@@ -139,7 +139,11 @@ const IndexPage = () => {
             <Col xs='12' lg='6'>
               <Row className='pb-3'>
                 <Col>
-                  <a href='https://www.google.com/maps/place/Duncan+Court,+22+Pallister+Rd,+Clacton-on-Sea+CO15+1PG/@51.7886192,1.1538294,17z/data=!3m1!4b1!4m5!3m4!1s0x47d96ccc0704389f:0x1fad504667380c74!8m2!3d51.7886192!4d1.1560181'>
+                  <a
+                    href='https://www.google.com/maps/place/Duncan+Court,+22+Pallister+Rd,+Clacton-on-Sea+CO15+1PG/@51.7886192,1.1538294,17z/data=!3m1!4b1!4m5!3m4!1s0x47d96ccc0704389f:0x1fad504667380c74!8m2!3d51.7886192!4d1.1560181'
+                    target='_blank'
+                    rel='noreferrer'
+                  >
                     <StaticImage
                       src='../images/map.png'
                       alt='map'
