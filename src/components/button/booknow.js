@@ -8,6 +8,7 @@ const BookNowButton = () => (
     onClick={() => {
       navigate('/#book');
     }}
+    size='lg'
   >
     Book now
   </Button>
