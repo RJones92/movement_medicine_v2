@@ -64,7 +64,7 @@ const IndexPage = () => {
                     placeholder='blurred'
                   />
                   <Card.Body>
-                    <Card.Text>Arthritis</Card.Text>
+                    <Card.Text>Arthritic Pain</Card.Text>
                   </Card.Body>
                 </Card>
               </Link>
