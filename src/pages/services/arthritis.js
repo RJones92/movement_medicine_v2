@@ -3,7 +3,7 @@ import Service from '../../components/service';
 
 const ArthritisPage = () => {
   return (
-    <Service bannerTitle='Arthritis' id='arthritis' bgcolor='bg-white'>
+    <Service bannerTitle='Arthritic Pain' id='arthritis' bgcolor='bg-white'>
       <p>
         Arthritis is a chronic or long-term condition which can affect any joint
         in your body. It is most commonly experienced in a person's weight
