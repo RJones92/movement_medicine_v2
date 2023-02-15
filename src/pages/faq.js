@@ -2,7 +2,7 @@ import * as React from 'react';
 import Service from '../components/service';
 import Accordion from 'react-bootstrap/Accordion';
 
-const ServiceBackachePage = () => {
+const FaqPage = () => {
   return (
     <Service
       bannerTitle='Frequently Asked Questions'
@@ -121,4 +121,4 @@ const ServiceBackachePage = () => {
   );
 };
 
-export default ServiceBackachePage;
+export default FaqPage;
