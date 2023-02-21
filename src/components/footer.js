@@ -2,6 +2,7 @@ import * as React from 'react';
 import Container from 'react-bootstrap/Container';
 import { StaticImage } from 'gatsby-plugin-image';
 import { Col, Row } from 'react-bootstrap';
+import privacyPolicy from '../static/COPC_Privacy_Notice.pdf';
 
 const Footer = ({ children, bannerTitle, contactUsButtonVisible }) => {
   return (
@@ -15,7 +16,12 @@ const Footer = ({ children, bannerTitle, contactUsButtonVisible }) => {
                   <Col>
                     <p>
                       <small>
-                        <a href='#' style={{ color: 'inherit' }}>
+                        <a
+                          href={privacyPolicy}
+                          target='_blank'
+                          rel='noreferrer'
+                          style={{ color: 'inherit' }}
+                        >
                           Privacy policy (PDF)
                         </a>
                       </small>
