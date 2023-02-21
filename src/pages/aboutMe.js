@@ -10,14 +10,14 @@ const AboutMePage = () => {
       <Row className='my-3'>
         <Col>
           <p class='lead'>Hi, I'm Jamie.</p>
-          <p align='justify'>
+          <p>
             I became an Osteopath in 2018, finishing with distinction in the
             final clinical competency examinations. Since then, I have worked at
             Clacton and in several other clinics to gain as much experience and
             knowledge as possible. I have always taken an interest in the human
             body, and was eager to learn how the body functions.{' '}
           </p>
-          <p align='justify'>
+          <p>
             I adapt my approach when assessing and treating patients based on a
             variety of factors. What helps one person's pain, may not work for
             others. No two patients ever respond in the same way - even if they
@@ -55,7 +55,7 @@ const AboutMePage = () => {
       </Row>
       <Row className='my-3'>
         <Col>
-          <p align='justify'>
+          <p>
             All of these skills combined with an in-depth knowledge of the human
             body gives me an excellent chance at being able to help patients
             with their problems. Of course, I also know my limitations, and
@@ -63,7 +63,7 @@ const AboutMePage = () => {
             cases, I will always write to GPs and can suggest appropriate
             referrals when indicated.
           </p>
-          <p align='justify'>
+          <p>
             I will always aim to gradually increase the loading on the injured
             or painful tissue so that there is a steady and safe return to the
             patient's previous strength and ability. This may be done by
@@ -71,9 +71,7 @@ const AboutMePage = () => {
             exercises which I am able to send out with videos and pictures of
             for patients' convenience.
           </p>
-          <p align='justify'>
-            I look forward to meeting and helping you in clinic soon.
-          </p>
+          <p>I look forward to meeting and helping you in clinic soon.</p>
         </Col>
       </Row>
     </Service>
