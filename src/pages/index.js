@@ -161,14 +161,14 @@ const IndexPage = () => {
               />
               <ContactWidget
                 widgetIcon={<FontAwesomeIcon icon={faPhone} size='3x' />}
-                widgetText='07922 448 380'
-                widgetUrl='tel:+07922448380'
+                widgetText='01255 781388'
+                widgetUrl='tel:+01255781388'
                 newTab={false}
               />
               <ContactWidget
                 widgetIcon={<FontAwesomeIcon icon={faEnvelope} size='3x' />}
-                widgetText='contact@clacton-osteopathy-and-physiotherapy.co.uk'
-                widgetUrl='mailto:contact@clacton-osteopathy-and-physiotherapy.co.uk'
+                widgetText='contact@cop-clinic.co.uk'
+                widgetUrl='mailto:contact@cop-clinic.co.uk'
                 newTab={false}
               />
             </Col>
