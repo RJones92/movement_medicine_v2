@@ -2,12 +2,15 @@ import * as React from 'react';
 import Button from 'react-bootstrap/Button';
 import { navigate } from 'gatsby';
 
+const bookingToolHoldingPageUrl =
+  'https://new-ob.rushcliff.com/holding-page/561217?bookingType=appointment';
+
 const BookNowButton = () => (
   <Button
     variant='primary'
-    onClick={() => {
-      navigate('/#book');
-    }}
+    href={bookingToolHoldingPageUrl}
+    target='_blank'
+    rel='noreferrer'
     size='lg'
   >
     Book now
