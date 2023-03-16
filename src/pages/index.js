@@ -15,6 +15,29 @@ import { Link } from 'gatsby';
 import Layout from '../components/layout';
 import ContactWidget from '../components/contactWidget';
 import HorizontalRule from '../components/horizontalRule';
+import FaviconSmall from '../static/favicon/favicon-16x16.png';
+import FaviconLarge from '../static/favicon/favicon-32x32.png';
+import FaviconApple from '../static/favicon/apple-touch-icon.png';
+// import FaviconManifest from '../static/favicon/site.webmanifest';
+import FaviconShortcut from '../static/favicon/favicon.ico';
+// import FaviconMSConfig from '../static/favicon/browserconfig.xml';
+
+export const Head = () => {
+  return (
+    <>
+      <title>COP Clinic</title>
+
+      <link rel='apple-touch-icon' sizes='180x180' href={FaviconApple} />
+      <link rel='icon' type='image/png' sizes='32x32' href={FaviconLarge} />
+      <link rel='icon' type='image/png' sizes='16x16' href={FaviconSmall} />
+      {/* <link rel='manifest' href={FaviconManifest} /> */}
+      <link rel='shortcut icon' href={FaviconShortcut} />
+      <meta name='msapplication-TileColor' content='#00aba9' />
+      {/* <meta name='msapplication-config' content={FaviconMSConfig} /> */}
+      <meta name='theme-color' content='#ffffff' />
+    </>
+  );
+};
 
 const IndexPage = () => {
   return (

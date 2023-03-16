@@ -3,6 +3,18 @@ import * as React from 'react';
 import Service from '../components/service';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import FaviconSmall from '../static/favicon/favicon-16x16.png';
+import FaviconLarge from '../static/favicon/favicon-32x32.png';
+
+export const Head = () => {
+  return (
+    <>
+      <title>COP Clinic - About Me</title>
+      <link rel='icon' type='image/png' sizes='32x32' href={FaviconLarge} />
+      <link rel='icon' type='image/png' sizes='16x16' href={FaviconSmall} />
+    </>
+  );
+};
 
 const AboutMePage = () => {
   return (

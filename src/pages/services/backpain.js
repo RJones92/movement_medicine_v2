@@ -1,6 +1,17 @@
 import * as React from 'react';
 import Service from '../../components/service';
+import FaviconSmall from '../../static/favicon/favicon-16x16.png';
+import FaviconLarge from '../../static/favicon/favicon-32x32.png';
 
+export const Head = () => {
+  return (
+    <>
+      <title>COP Clinic - Back pain and neck pain</title>
+      <link rel='icon' type='image/png' sizes='32x32' href={FaviconLarge} />
+      <link rel='icon' type='image/png' sizes='16x16' href={FaviconSmall} />
+    </>
+  );
+};
 const BackPainPage = () => {
   return (
     <Service
