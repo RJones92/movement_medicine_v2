@@ -32,7 +32,7 @@ const FaqPage = () => {
             about your problem and your goals, followed by a thorough assessment
             to find out the reason / cause of your problem. We will then be able
             to start the correct treatment. We will always give some advice for
-            you to do at home, so you can continue your recovery away from the
+            you to follow at home, so you can continue your recovery away from the
             clinic as well.
           </Accordion.Body>
         </Accordion.Item>
