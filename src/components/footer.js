@@ -3,6 +3,7 @@ import Container from 'react-bootstrap/Container';
 import { StaticImage } from 'gatsby-plugin-image';
 import { Col, Row } from 'react-bootstrap';
 import privacyPolicy from '../static/COPC_Privacy_Notice.pdf';
+import Socials from './socials/socials';
 
 const Footer = ({ children, bannerTitle, contactUsButtonVisible }) => {
   return (
@@ -14,18 +15,23 @@ const Footer = ({ children, bannerTitle, contactUsButtonVisible }) => {
               <Col xs='12' md='10' lg='8'>
                 <Row className='justify-content-between'>
                   <Col>
-                    <p>
-                      <small>
-                        <a
-                          href={privacyPolicy}
-                          target='_blank'
-                          rel='noreferrer'
-                          style={{ color: 'inherit' }}
-                        >
-                          Privacy policy (PDF)
-                        </a>
-                      </small>
-                    </p>
+                    <Row>
+                      <p>
+                        <small>
+                          <a
+                            href={privacyPolicy}
+                            target='_blank'
+                            rel='noreferrer'
+                            style={{ color: 'inherit' }}
+                          >
+                            Privacy policy (PDF)
+                          </a>
+                        </small>
+                      </p>
+                    </Row>
+                    <Row>
+                      <Socials />
+                    </Row>
                   </Col>
                   <Col xs='3' lg='2'>
                     <StaticImage
