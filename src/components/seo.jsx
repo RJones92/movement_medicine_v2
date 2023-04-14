@@ -49,6 +49,12 @@ export const SEO = ({ title, description, pathname, children }) => {
         gtag('config', 'G-4N85694T9Z');`}
       </script>
       {/* End Google tag scripts */}
+      {/* Google site ownership */}
+      <meta
+        name='google-site-verification'
+        content='wGarCZxE3G8MZoSGbnbSVSlUIBr5TPsR8X1_hnAW-ig'
+      />
+      {/*End Google site ownership */}
 
       {children}
     </>
