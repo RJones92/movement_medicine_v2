@@ -4,34 +4,8 @@ import FaviconSmall from '../../static/favicon/favicon-16x16.png';
 import FaviconLarge from '../../static/favicon/favicon-32x32.png';
 import FaviconApple from '../../static/favicon/apple-touch-icon.png';
 import FaviconShortcut from '../../static/favicon/favicon.ico';
+import { SEO } from '../../components/seo';
 
-export const Head = () => {
-  return (
-    <>
-      <title>COP Clinic - Shoulder Pain</title>
-
-      <link rel='apple-touch-icon' sizes='180x180' href={FaviconApple} />
-      <link rel='icon' type='image/png' sizes='32x32' href={FaviconLarge} />
-      <link rel='icon' type='image/png' sizes='16x16' href={FaviconSmall} />
-      <link rel='shortcut icon' href={FaviconShortcut} />
-      <meta name='msapplication-TileColor' content='#00aba9' />
-      <meta name='theme-color' content='#ffffff' />
-
-      {/* Google tag (gtag.js) scripts */}
-      <script
-        async
-        src='https://www.googletagmanager.com/gtag/js?id=G-4N85694T9Z'
-      />
-      <script>
-        {`window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-4N85694T9Z');`}
-      </script>
-      {/* End Google tag scripts */}
-    </>
-  );
-};
 const ShoulderPainPage = () => {
   return (
     <Service bannerTitle='Shoulder Pain' id='shoulderpain' bgcolor='bg-white'>
@@ -56,3 +30,7 @@ const ShoulderPainPage = () => {
 };
 
 export default ShoulderPainPage;
+
+export const Head = () => {
+  return <SEO title='COP Clinic - Shoulder Pain' />;
+};
