@@ -1,38 +1,7 @@
 import * as React from 'react';
 import Service from '../components/service';
 import Accordion from 'react-bootstrap/Accordion';
-import FaviconSmall from '../static/favicon/favicon-16x16.png';
-import FaviconLarge from '../static/favicon/favicon-32x32.png';
-import FaviconApple from '../static/favicon/apple-touch-icon.png';
-import FaviconShortcut from '../static/favicon/favicon.ico';
-
-export const Head = () => {
-  return (
-    <>
-      <title>COP Clinic - FAQs</title>
-
-      <link rel='apple-touch-icon' sizes='180x180' href={FaviconApple} />
-      <link rel='icon' type='image/png' sizes='32x32' href={FaviconLarge} />
-      <link rel='icon' type='image/png' sizes='16x16' href={FaviconSmall} />
-      <link rel='shortcut icon' href={FaviconShortcut} />
-      <meta name='msapplication-TileColor' content='#00aba9' />
-      <meta name='theme-color' content='#ffffff' />
-
-      {/* Google tag (gtag.js) scripts */}
-      <script
-        async
-        src='https://www.googletagmanager.com/gtag/js?id=G-4N85694T9Z'
-      />
-      <script>
-        {`window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-4N85694T9Z');`}
-      </script>
-      {/* End Google tag scripts */}
-    </>
-  );
-};
+import { SEO } from '../components/seo';
 
 const FaqPage = () => {
   return (
@@ -52,8 +21,8 @@ const FaqPage = () => {
             about your problem and your goals, followed by a thorough assessment
             to find out the reason / cause of your problem. We will then be able
             to start the correct treatment. We will always give some advice for
-            you to follow at home, so you can continue your recovery away from the
-            clinic as well.
+            you to follow at home, so you can continue your recovery away from
+            the clinic as well.
           </Accordion.Body>
         </Accordion.Item>
         <Accordion.Item eventKey='1'>
@@ -154,3 +123,7 @@ const FaqPage = () => {
 };
 
 export default FaqPage;
+
+export const Head = () => {
+  return <SEO title='COP Clinic - FAQs' />;
+};
