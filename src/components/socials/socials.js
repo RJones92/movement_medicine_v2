@@ -16,7 +16,6 @@ const Socials = () => (
         layout='constrained'
         placeholder='blurred'
         width='45'
-        height='45'
       />
     </a>
     {'  '}
@@ -32,7 +31,6 @@ const Socials = () => (
         layout='constrained'
         placeholder='blurred'
         width='45'
-        height='45'
       />
     </a>
   </Col>
