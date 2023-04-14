@@ -163,7 +163,7 @@ const IndexPage = () => {
               <ContactWidget
                 widgetIcon={<FontAwesomeIcon icon={faPhone} size='3x' />}
                 widgetText='01255 781388'
-                widgetUrl='tel:+01255781388'
+                widgetUrl='tel:01255781388'
                 newTab={false}
               />
               <ContactWidget
