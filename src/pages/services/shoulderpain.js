@@ -1,9 +1,5 @@
 import * as React from 'react';
 import Service from '../../components/service';
-import FaviconSmall from '../../static/favicon/favicon-16x16.png';
-import FaviconLarge from '../../static/favicon/favicon-32x32.png';
-import FaviconApple from '../../static/favicon/apple-touch-icon.png';
-import FaviconShortcut from '../../static/favicon/favicon.ico';
 import { SEO } from '../../components/seo';
 
 const ShoulderPainPage = () => {
