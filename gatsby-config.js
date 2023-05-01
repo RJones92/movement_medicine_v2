@@ -6,12 +6,14 @@ require('dotenv').config({
 
 module.exports = {
   siteMetadata: {
-    title: `Movement Medicine`,
-    siteUrl: `https://www.yourdomain.tld`,
+    title: `COP Clinic`,
+    description: `Clacton Osteopathy and Physiotherapy`,
+    siteUrl: `https://www.clacton-osteopathy-and-physiotherapy.co.uk`,
   },
   plugins: [
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
