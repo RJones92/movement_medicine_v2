@@ -4,7 +4,7 @@ import { SEO } from '../../components/seo';
 
 const TrappedNervePage = () => {
   return (
-    <Service bannerTitle='Trapped Nerves' id='trappednerves' bgcolor='bg-white'>
+    <Service bannerTitle='Trapped Nerves' id='trapped-nerve' bgcolor='bg-white'>
       <p>
         "Trapped" nerves can be very painful and limit your ability to move or
         use the affected limb. They are often problematic at night-time,

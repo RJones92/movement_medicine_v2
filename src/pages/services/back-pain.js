@@ -6,7 +6,7 @@ const BackPainPage = () => {
   return (
     <Service
       bannerTitle='Back Pain & Neck Pain'
-      id='backpain'
+      id='back-pain'
       bgcolor='bg-white'
     >
       <p>

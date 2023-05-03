@@ -6,7 +6,7 @@ const InjuryRehabPage = () => {
   return (
     <Service
       bannerTitle='Injury Rehabilitation'
-      id='injuryrehab'
+      id='injury-rehab'
       bgcolor='bg-white'
     >
       <p>

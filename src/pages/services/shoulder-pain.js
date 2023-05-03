@@ -4,7 +4,7 @@ import { SEO } from '../../components/seo';
 
 const ShoulderPainPage = () => {
   return (
-    <Service bannerTitle='Shoulder Pain' id='shoulderpain' bgcolor='bg-white'>
+    <Service bannerTitle='Shoulder Pain' id='shoulder-pain' bgcolor='bg-white'>
       <p>
         Shoulder pain can often start suddenly and become very painful very
         quickly, making tasks such as driving, getting dressed, carrying

@@ -41,7 +41,7 @@ const IndexPage = () => {
               </Link>
             </Col>
             <Col className='my-3'>
-              <Link to='/services/backpain'>
+              <Link to='/services/back-pain'>
                 <Card className='text-center'>
                   <StaticImage
                     src='../images/backache-1620045.jpg'
@@ -71,7 +71,7 @@ const IndexPage = () => {
               </Link>
             </Col>
             <Col className='my-3'>
-              <Link to='/services/shoulderpain'>
+              <Link to='/services/shoulder-pain'>
                 <Card className='text-center'>
                   <StaticImage
                     src='../images/backache-1620045.jpg'
@@ -86,7 +86,7 @@ const IndexPage = () => {
               </Link>
             </Col>
             <Col className='my-3'>
-              <Link to='/services/trappednerve'>
+              <Link to='/services/trapped-nerve'>
                 <Card className='text-center'>
                   <StaticImage
                     src='../images/backache-1620045.jpg'
@@ -101,7 +101,7 @@ const IndexPage = () => {
               </Link>
             </Col>
             <Col className='my-3'>
-              <Link to='/services/injuryrehab'>
+              <Link to='/services/injury-rehab'>
                 <Card className='text-center'>
                   <StaticImage
                     src='../images/backache-1620045.jpg'
