@@ -132,7 +132,7 @@ const IndexPage = () => {
             <Col xs='12' lg='6'>
               <StaticImage
                 src='../images/building.jpg'
-                alt='map'
+                alt='Picture of the exterior of Clacton Osteopathy & Physiotherapy clinic, with the clinic name displayed on the sign outside.'
                 layout='constrained'
                 placeholder='blurred'
               />
@@ -147,7 +147,7 @@ const IndexPage = () => {
                   >
                     <StaticImage
                       src='../images/Google-Maps-COP-Clinic-Location.png'
-                      alt='map'
+                      alt='Google Maps screenshot showing the location of Clacton Osteopathy & Physiotherapy clinic, click the image to view on Google Maps.'
                       layout='constrained'
                       placeholder='blurred'
                     />
