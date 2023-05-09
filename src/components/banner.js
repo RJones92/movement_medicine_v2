@@ -67,7 +67,7 @@ const Banner = ({ title, contactUsButtonVisible, id }) => {
           <Col xs='8' md='4' lg='4'>
             <StaticImage
               src='../images/New-Final-Logo.png'
-              alt='Clacton osteopathy and physiotherapy clinic'
+              alt='Clacton Osteopathy & Physiotherapy clinic logo, abbreviated to COP Clinic.'
               layout='constrained'
               placeholder='blurred'
             />

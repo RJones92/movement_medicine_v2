@@ -41,7 +41,7 @@ const IndexPage = () => {
               </Link>
             </Col>
             <Col className='my-3'>
-              <Link to='/services/backpain'>
+              <Link to='/services/back-pain'>
                 <Card className='text-center'>
                   <StaticImage
                     src='../images/backache-1620045.jpg'
@@ -71,7 +71,7 @@ const IndexPage = () => {
               </Link>
             </Col>
             <Col className='my-3'>
-              <Link to='/services/shoulderpain'>
+              <Link to='/services/shoulder-pain'>
                 <Card className='text-center'>
                   <StaticImage
                     src='../images/backache-1620045.jpg'
@@ -86,7 +86,7 @@ const IndexPage = () => {
               </Link>
             </Col>
             <Col className='my-3'>
-              <Link to='/services/trappednerve'>
+              <Link to='/services/trapped-nerve'>
                 <Card className='text-center'>
                   <StaticImage
                     src='../images/backache-1620045.jpg'
@@ -101,7 +101,7 @@ const IndexPage = () => {
               </Link>
             </Col>
             <Col className='my-3'>
-              <Link to='/services/injuryrehab'>
+              <Link to='/services/injury-rehab'>
                 <Card className='text-center'>
                   <StaticImage
                     src='../images/backache-1620045.jpg'
@@ -132,7 +132,7 @@ const IndexPage = () => {
             <Col xs='12' lg='6'>
               <StaticImage
                 src='../images/building.jpg'
-                alt='map'
+                alt='Picture of the exterior of Clacton Osteopathy & Physiotherapy clinic, with the clinic name displayed on the sign outside.'
                 layout='constrained'
                 placeholder='blurred'
               />
@@ -141,13 +141,13 @@ const IndexPage = () => {
               <Row className='pb-3'>
                 <Col>
                   <a
-                    href='https://www.google.com/maps/place/Duncan+Court,+22+Pallister+Rd,+Clacton-on-Sea+CO15+1PG/@51.7886192,1.1538294,17z/data=!3m1!4b1!4m5!3m4!1s0x47d96ccc0704389f:0x1fad504667380c74!8m2!3d51.7886192!4d1.1560181'
+                    href='https://goo.gl/maps/iFbQrcgqxB2egYab6?coh=178571&entry=tt'
                     target='_blank'
                     rel='noreferrer'
                   >
                     <StaticImage
-                      src='../images/map.png'
-                      alt='map'
+                      src='../images/Google-Maps-COP-Clinic-Location.png'
+                      alt='Google Maps screenshot showing the location of Clacton Osteopathy & Physiotherapy clinic, click the image to view on Google Maps.'
                       layout='constrained'
                       placeholder='blurred'
                     />
@@ -183,5 +183,7 @@ const IndexPage = () => {
 export default IndexPage;
 
 export const Head = () => {
-  return <SEO />;
+  return (
+    <SEO description='Clacton Osteopathy and Physiotherapy clinic offers effective and personalised treatments for a range of conditions. Our experienced professional utilises the latest techniques to help relieve pain, restore function, and promote overall wellness. Contact us today to schedule an appointment and take the first step towards feeling your best.' />
+  );
 };

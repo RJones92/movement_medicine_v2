@@ -48,7 +48,7 @@ const AboutMePage = () => {
         <Col xs='6' md='4'>
           <StaticImage
             src='../images/face.jpg'
-            alt='face'
+            alt='Picture of Jamie Acres, registered Osteopath at Clacton Osteopathy & Physiotherapy clinic.'
             layout='constrained'
             placeholder='blurred'
           ></StaticImage>
