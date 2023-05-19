@@ -4,8 +4,9 @@ import { StaticImage } from 'gatsby-plugin-image';
 import { Col, Row } from 'react-bootstrap';
 import privacyPolicy from '../static/COPC_Privacy_Notice.pdf';
 import Socials from './socials/socials';
+import styles from './footer.module.css';
 
-const Footer = ({ children, bannerTitle, contactUsButtonVisible }) => {
+const Footer = () => {
   return (
     <Row id='footer' className={`justify-content-center py-3 bg-secondary`}>
       <Col>
@@ -14,24 +15,34 @@ const Footer = ({ children, bannerTitle, contactUsButtonVisible }) => {
             <Row className='justify-content-center align-items-center'>
               <Col xs='12' md='10' lg='8'>
                 <Row className='justify-content-between'>
-                  <Col>
+                  <Col xs='3'>
                     <Row>
                       <p>
-                        <small>
-                          <a
-                            href={privacyPolicy}
-                            target='_blank'
-                            rel='noreferrer'
-                            style={{ color: 'inherit' }}
-                          >
-                            Privacy policy (PDF)
-                          </a>
-                        </small>
+                        <a
+                          href={privacyPolicy}
+                          target='_blank'
+                          rel='noreferrer'
+                          style={{ color: 'inherit' }}
+                        >
+                          Privacy policy (PDF)
+                        </a>
                       </p>
                     </Row>
                     <Row>
                       <Socials />
                     </Row>
+                  </Col>
+                  <Col xs='6'>
+                    <p class='text-center'>
+                      Clacton Osteopathy & Physiotherapy Clinic,
+                      <br />
+                      22 Pallister Road, Clacton, CO15 1PG
+                      <br />
+                      contact@cop-clinic.co.uk
+                      <br />
+                      01255 781388
+                      <br />
+                    </p>
                   </Col>
                   <Col xs='3' lg='2'>
                     <StaticImage
