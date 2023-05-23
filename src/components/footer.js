@@ -4,14 +4,14 @@ import { StaticImage } from 'gatsby-plugin-image';
 import { Col, Row } from 'react-bootstrap';
 import privacyPolicy from '../static/COPC_Privacy_Notice.pdf';
 import Socials from './socials/socials';
-import styles from './footer.module.css';
+import { footer } from './footer.module.css';
 
 const Footer = () => {
   return (
     <Row id='footer' className={`justify-content-center py-3 bg-secondary`}>
       <Col>
         <section>
-          <Container>
+          <Container className={footer}>
             <Row className='justify-content-center align-items-center'>
               <Col xs='12' md='10' lg='8'>
                 <Row className='justify-content-between'>
