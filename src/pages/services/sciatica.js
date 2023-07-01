@@ -4,12 +4,15 @@ import Accordion from 'react-bootstrap/Accordion';
 import { SEO } from '../../components/seo';
 
 const SciaticaPage = () => {
-  // TODO: Accordion content
   const accordion = (
     <Accordion flush>
       <Accordion.Item eventKey='1'>
         <Accordion.Header>What triggers sciatica?</Accordion.Header>
         <Accordion.Body>
+          <p>
+            Sciatica can be triggered by a variety of causes, the list below
+            encompasses some common causes.
+          </p>
           <Accordion flush>
             <Accordion.Item eventKey='100'>
               <Accordion.Header>
