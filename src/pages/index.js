@@ -29,7 +29,7 @@ const IndexPage = () => {
               <Link to='/services/sciatica'>
                 <Card className='text-center'>
                   <StaticImage
-                    src='../images/backache-1620045.jpg'
+                    src='../images/sciatica-1.jpeg'
                     alt='sciatica'
                     layout='constrained'
                     placeholder='blurred'

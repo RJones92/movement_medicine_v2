@@ -7,22 +7,34 @@ import { StaticImage } from 'gatsby-plugin-image';
 import HorizontalRule from '../components/horizontalRule';
 import ContactNowButtons from './button/contactNowButtons';
 
-const Service_v2 = ({ id, bgcolor, bannerTitle, accordion, children }) => {
+const Service_v2 = ({
+  id,
+  bgcolor,
+  bannerTitle,
+  accordion,
+  staticImage,
+  children,
+}) => {
   const bannerId = id + `-banner`;
   const contentsId = id + '-contents';
 
+  let image = staticImage ? (
+    staticImage
+  ) : (
+    <StaticImage
+      src='../images/backache-1620045.jpg'
+      alt='sciatica'
+      layout='constrained'
+      placeholder='blurred'
+    />
+  );
   return (
     <div id={id}>
       <Layout bannerTitle={bannerTitle} id={bannerId}>
         <Section id={contentsId} bgcolor={bgcolor}>
           <Row className='justify-content-center'>
             <Col md='4' className='pb-3'>
-              <StaticImage
-                src='../images/backache-1620045.jpg'
-                alt='sciatica'
-                layout='constrained'
-                placeholder='blurred'
-              />
+              {image}
             </Col>
             <Col>
               <Row>{children}</Row>
