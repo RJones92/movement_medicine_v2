@@ -12,8 +12,8 @@ const TrappedNervePage = () => {
         <Accordion.Body>
           <p>
             There are multiple causes for nerves to become symptomatic or
-            trapped, this can happen to peripheral nerves all over the body.
-            Read below for a few common
+            "trapped", this can happen to peripheral nerves all over the body.
+            Read below for more information.
           </p>
           <Accordion flush>
             <Accordion.Item eventKey='100'>
