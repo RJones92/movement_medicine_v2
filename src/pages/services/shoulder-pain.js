@@ -1,6 +1,7 @@
 import * as React from 'react';
 import Service from '../../components/service_v2';
 import Accordion from 'react-bootstrap/Accordion';
+import { StaticImage } from 'gatsby-plugin-image';
 import { SEO } from '../../components/seo';
 
 const ShoulderPainPage = () => {
@@ -533,6 +534,12 @@ const ShoulderPainPage = () => {
       id='shoulder-pain'
       bgcolor='bg-white'
       accordion={accordion}
+      staticImage=<StaticImage
+        src='../images/services/shoulder-pain-1.jpeg'
+        alt='sciatica'
+        layout='constrained'
+        placeholder='blurred'
+      />
     >
       <p>
         Shoulder pain can often start suddenly and become very painful very

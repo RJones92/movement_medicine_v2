@@ -29,7 +29,7 @@ const IndexPage = () => {
               <Link to='/services/sciatica'>
                 <Card className='text-center'>
                   <StaticImage
-                    src='../images/sciatica-1.jpeg'
+                    src='../images/services/sciatica-1.jpeg'
                     alt='sciatica'
                     layout='constrained'
                     placeholder='blurred'
@@ -44,7 +44,7 @@ const IndexPage = () => {
               <Link to='/services/back-pain'>
                 <Card className='text-center'>
                   <StaticImage
-                    src='../images/backache-1620045.jpg'
+                    src='../images/services/back-pain-1.jpeg'
                     alt='back pain'
                     layout='constrained'
                     placeholder='blurred'
@@ -59,7 +59,7 @@ const IndexPage = () => {
               <Link to='/services/arthritis'>
                 <Card className='text-center'>
                   <StaticImage
-                    src='../images/backache-1620045.jpg'
+                    src='../images/services/arthritis-1.jpeg'
                     alt='arthritis'
                     layout='constrained'
                     placeholder='blurred'
@@ -74,7 +74,7 @@ const IndexPage = () => {
               <Link to='/services/shoulder-pain'>
                 <Card className='text-center'>
                   <StaticImage
-                    src='../images/backache-1620045.jpg'
+                    src='../images/services/shoulder-pain-1.jpeg'
                     alt='shoulder pain'
                     layout='constrained'
                     placeholder='blurred'
@@ -89,7 +89,7 @@ const IndexPage = () => {
               <Link to='/services/trapped-nerve'>
                 <Card className='text-center'>
                   <StaticImage
-                    src='../images/backache-1620045.jpg'
+                    src='../images/services/trapped-nerve-1.jpeg'
                     alt='trapped nerves'
                     layout='constrained'
                     placeholder='blurred'
@@ -104,7 +104,7 @@ const IndexPage = () => {
               <Link to='/services/injury-rehab'>
                 <Card className='text-center'>
                   <StaticImage
-                    src='../images/backache-1620045.jpg'
+                    src='../images/services/injury-rehab-1.jpeg'
                     alt='injury rehabilitation'
                     layout='constrained'
                     placeholder='blurred'

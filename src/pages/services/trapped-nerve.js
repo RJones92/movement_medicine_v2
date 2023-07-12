@@ -1,6 +1,7 @@
 import * as React from 'react';
 import Service from '../../components/service_v2';
 import Accordion from 'react-bootstrap/Accordion';
+import { StaticImage } from 'gatsby-plugin-image';
 import { SEO } from '../../components/seo';
 
 const TrappedNervePage = () => {
@@ -527,6 +528,12 @@ const TrappedNervePage = () => {
       id='trapped-nerve'
       bgcolor='bg-white'
       accordion={accordion}
+      staticImage=<StaticImage
+        src='../images/services/trapped-nerve-1.jpeg'
+        alt='sciatica'
+        layout='constrained'
+        placeholder='blurred'
+      />
     >
       <p>
         "Trapped" nerves can be very painful and limit your ability to move or
