@@ -1,6 +1,7 @@
 import * as React from 'react';
 import Service from '../../components/service_v2';
 import Accordion from 'react-bootstrap/Accordion';
+import { StaticImage } from 'gatsby-plugin-image';
 import { SEO } from '../../components/seo';
 
 const SciaticaPage = () => {
@@ -477,6 +478,12 @@ const SciaticaPage = () => {
       id='sciatica'
       bgcolor='bg-white'
       accordion={accordion}
+      staticImage=<StaticImage
+        src='../images/services/sciatica-1.jpeg'
+        alt='sciatica'
+        layout='constrained'
+        placeholder='blurred'
+      />
     >
       <p>
         Sciatica can be particularly debilitating for people. As the pain
