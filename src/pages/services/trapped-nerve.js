@@ -529,7 +529,7 @@ const TrappedNervePage = () => {
       bgcolor='bg-white'
       accordion={accordion}
       staticImage=<StaticImage
-        src='../images/services/trapped-nerve-1.jpeg'
+        src='../../images/services/trapped-nerve-1.jpeg'
         alt='sciatica'
         layout='constrained'
         placeholder='blurred'
