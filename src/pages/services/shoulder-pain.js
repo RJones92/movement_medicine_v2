@@ -535,7 +535,7 @@ const ShoulderPainPage = () => {
       bgcolor='bg-white'
       accordion={accordion}
       staticImage=<StaticImage
-        src='../images/services/shoulder-pain-1.jpeg'
+        src='../../images/services/shoulder-pain-1.jpeg'
         alt='sciatica'
         layout='constrained'
         placeholder='blurred'

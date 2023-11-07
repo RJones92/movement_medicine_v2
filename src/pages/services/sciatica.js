@@ -479,7 +479,7 @@ const SciaticaPage = () => {
       bgcolor='bg-white'
       accordion={accordion}
       staticImage=<StaticImage
-        src='../images/services/sciatica-1.jpeg'
+        src='../../images/services/sciatica-1.jpeg'
         alt='sciatica'
         layout='constrained'
         placeholder='blurred'
