@@ -131,7 +131,7 @@ const IndexPage = () => {
           <Row className='gy-5'>
             <Col xs='12' lg='6'>
               <StaticImage
-                src='../images/building.jpg'
+                src='../images/building_Nov2023.jpg'
                 alt='Picture of the exterior of Clacton Osteopathy & Physiotherapy clinic, with the clinic name displayed on the sign outside.'
                 layout='constrained'
                 placeholder='blurred'
