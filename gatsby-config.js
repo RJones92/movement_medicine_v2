@@ -21,5 +21,15 @@ module.exports = {
         path: path.join(__dirname, `src`, `images`),
       },
     },
+    {
+      resolve: `gatsby-plugin-robots-txt`,
+      options: {
+        sitemap: [
+          `https://www.clacton-osteopathy-and-physiotherapy.co.uk/sitemap/sitemap-index.xml`,
+          `https://www.clacton-osteopathy-and-physiotherapy.co.uk/sitemap/sitemap-indexed-0.xml`,
+        ],
+        policy: [{ userAgent: '*', allow: '/' }],
+      },
+    },
   ],
 };
