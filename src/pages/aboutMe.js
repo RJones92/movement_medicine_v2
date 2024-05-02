@@ -10,13 +10,21 @@ const AboutMePage = () => {
     <Service bannerTitle='About Me' id='about-me' bgcolor='bg-white'>
       <Row className='my-3'>
         <Col>
-          <p class='lead'>Hi, I'm Jamie.</p>
+          <StaticImage
+            src='../images/Jamie_Head_Shot_High_Res.jpg'
+            alt='Picture of Jamie Acres, registered Osteopath at Clacton Osteopathy & Physiotherapy clinic.'
+            layout='constrained'
+            placeholder='blurred'
+            className='float-end'
+            height={250}
+          />
+          <p className='lead'>Hi, I'm Jamie.</p>
           <p>
             I became an Osteopath in 2018, finishing with distinction in the
             final clinical competency examinations. Since then, I have worked at
             Clacton and in several other clinics to gain as much experience and
             knowledge as possible. I have always taken an interest in the human
-            body, and was eager to learn how the body functions.{' '}
+            body, and was eager to learn how the body functions.
           </p>
           <p>
             I adapt my approach when assessing and treating patients based on a
@@ -26,33 +34,21 @@ const AboutMePage = () => {
           </p>
         </Col>
       </Row>
-      <Row className='my-3 justify-content-center'>
-        <Col xs='12' md='8'>
-          <p>
-            I utilise a variety of skills and treatments, such as:
-            <ul>
-              <li>Osteopathic Manipulation</li>
-              <li>Soft tissue techniques</li>
-              <li>Sports massage, </li>
-              <li>Dry needling (medical acupuncture)</li>
-              <li>Exercise prescription</li>
-              <li>CBT (in relation to pain)</li>
-              <li>Therapeutic ultrasound</li>
-              <li>Electrotherapy</li>
-              <li>
-                I am soon taking a course in Cognitive Functional Therapy.
-              </li>
-            </ul>
-          </p>
-        </Col>
-        <Col xs='6' md='4'>
-          <StaticImage
-            src='../images/face.jpg'
-            alt='Picture of Jamie Acres, registered Osteopath at Clacton Osteopathy & Physiotherapy clinic.'
-            layout='constrained'
-            placeholder='blurred'
-          ></StaticImage>
-        </Col>
+      <Row className='my-3'>
+        <p>
+          I utilise a variety of skills and treatments, such as:
+          <ul>
+            <li>Osteopathic Manipulation</li>
+            <li>Soft tissue techniques</li>
+            <li>Sports massage, </li>
+            <li>Dry needling (medical acupuncture)</li>
+            <li>Exercise prescription</li>
+            <li>CBT (in relation to pain)</li>
+            <li>Therapeutic ultrasound</li>
+            <li>Electrotherapy</li>
+            <li>I am soon taking a course in Cognitive Functional Therapy.</li>
+          </ul>
+        </p>
       </Row>
       <Row className='my-3'>
         <Col>
