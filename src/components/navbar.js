@@ -52,14 +52,14 @@ export default function NavigationBar() {
                 Find Us
               </Link>
             </Nav.Item>
-            <Nav.Item as='li' eventKey='/aboutMe'>
+            <Nav.Item as='li' eventKey='/theTeam'>
               <Link
-                to='/aboutMe'
-                key='aboutMe'
+                to='/theTeam'
+                key='theTeam'
                 className='nav-link'
                 activeClassName='active'
               >
-                About Me
+                The Team
               </Link>
             </Nav.Item>
           </Nav>
