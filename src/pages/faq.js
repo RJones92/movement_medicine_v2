@@ -101,12 +101,18 @@ const FaqPage = () => {
         <Accordion.Item eventKey='6'>
           <Accordion.Header>How long is an appointment?</Accordion.Header>
           <Accordion.Body>
-            The appointments are a 30-minute treatment time.
+            <p>
+              Osteopathy appointments with Jamie are 30 minutes treatment time.
+            </p>
+            <p>Massage appointments with Ami are 60 minutes treatment time.</p>
           </Accordion.Body>
         </Accordion.Item>
         <Accordion.Item eventKey='7'>
           <Accordion.Header>How much does it cost?</Accordion.Header>
-          <Accordion.Body>An appointment is £47.</Accordion.Body>
+          <Accordion.Body>
+            <p>Osteopathy appointment £47.</p>
+            <p>Massage appointment £45.</p>
+          </Accordion.Body>
         </Accordion.Item>
         <Accordion.Item eventKey='8'>
           <Accordion.Header>Do you offer home visits?</Accordion.Header>
