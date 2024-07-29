@@ -9,7 +9,7 @@ const TheTeamPage = () => {
   return (
     <Service bannerTitle='About Me' id='about-me' bgcolor='bg-white'>
       {JamieHtml}
-      {AmieHtml}
+      {AmiHtml}
     </Service>
   );
 };
@@ -82,7 +82,7 @@ const JamieHtml = (
   </div>
 );
 
-const AmieHtml = (
+const AmiHtml = (
   <div>
     <Row className='pt-3'>
       <Col>
@@ -96,28 +96,51 @@ const AmieHtml = (
         />
         <p className='lead'>Ami - Massage Therapist</p>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean luctus
-          porta lectus a eleifend. Donec sagittis, dolor at volutpat bibendum,
-          augue nunc porta sapien, gravida porttitor elit nisi condimentum orci.
-          Maecenas a sollicitudin velit. Nam posuere mollis orci, a placerat
-          purus blandit quis. Nulla augue magna, pellentesque sed mi eu, laoreet
-          finibus ligula. Maecenas dignissim euismod nibh sit amet luctus.
-          Maecenas id sapien massa. Fusce ante quam, malesuada vitae lorem
-          vitae, tincidunt suscipit erat. Duis a lectus pharetra, volutpat neque
-          quis, aliquet sapien. Vestibulum tristique accumsan luctus. Aenean eu
-          nisi ut urna luctus blandit. Nam tristique nisi tristique, luctus enim
-          non, iaculis tortor. Nullam scelerisque vel lacus vitae convallis.
-          Nulla facilisi.
+          Hello! My name is Ami, and I am a dedicated and passionate massage
+          therapist. My journey into the world of massage therapy began with a
+          deep interest in holistic health and the profound impact of touch on
+          overall well-being, which was further inspired by my previous career
+          in care. Working in care, I witnessed firsthand the transformative
+          power of compassionate touch and its ability to improve both physical
+          and emotional health. This experience motivated me to pursue a career
+          in massage therapy.
         </p>
         <p>
-          Suspendisse id lorem ac ex vehicula fringilla vel eget enim. Nullam
-          sollicitudin varius orci eget condimentum. Suspendisse potenti.
-          Suspendisse fringilla erat et magna varius, at blandit nisi laoreet.
-          Quisque odio eros, faucibus vel augue quis, iaculis facilisis dui.
-          Etiam eu ligula in tellus blandit maximus in ut orci. Donec nisl
-          felis, commodo ac nunc id, vehicula sagittis ligula. In ac ex eget
-          ipsum hendrerit luctus et sit amet enim. Praesent vel consequat eros,
-          quis vehicula sem. Aenean dignissim mauris eu dui luctus dignissim.
+          My training includes various massage techniques, including full body,
+          hot stone, Indian head, and bamboo massage. I continuously update my
+          skills and knowledge to offer the most effective and up-to-date
+          treatments to my clients, and I am currently undertaking a course in
+          sports massage. My approach is client-centered, tailoring each session
+          to meet the unique needs and goals of every individual.
+        </p>
+        <p>
+          I strive to create a warm and welcoming environment where clients can
+          feel safe and relaxed. My goal is not only to alleviate pain and
+          tension but also to promote a sense of peace and relaxation that
+          extends beyond the massage session. I am committed to helping my
+          clients achieve their wellness goals and improve their quality of life
+          through the therapeutic power of massage.
+        </p>
+        <p>
+          In my practice, I emphasize the importance of listening to my clients
+          and understanding their concerns. Whether you are seeking relief from
+          chronic pain, recovering from an injury, or simply looking to unwind
+          and de-stress, I am here to support you on your journey to better
+          health and well-being.
+        </p>
+        <p>
+          Outside of my practice, I am passionate about weight lifting and enjoy
+          staying active through this challenging and rewarding hobby. Weight
+          lifting not only keeps me physically fit but also deepens my
+          understanding of the body’s mechanics and the importance of muscle
+          health and recovery. This knowledge enhances my ability to help
+          clients, particularly athletes and fitness enthusiasts, achieve
+          optimal performance and recovery.
+        </p>
+        <p>
+          I look forward to the opportunity to work with you and help you
+          achieve your wellness goals. Thank you for considering me as your
+          massage therapist.
         </p>
       </Col>
     </Row>
