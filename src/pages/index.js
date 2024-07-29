@@ -24,98 +24,7 @@ const IndexPage = () => {
         <HorizontalRule />
         <Section id='services' bgcolor='bg-white'>
           <TitleRow text='Services' />
-          <Row xs='2' md='3'>
-            <Col className='my-3'>
-              <Link to='/services/sciatica'>
-                <Card className='text-center'>
-                  <StaticImage
-                    src='../images/services/sciatica-1.jpeg'
-                    alt='sciatica'
-                    layout='constrained'
-                    placeholder='blurred'
-                  />
-                  <Card.Body>
-                    <Card.Text>Sciatica</Card.Text>
-                  </Card.Body>
-                </Card>
-              </Link>
-            </Col>
-            <Col className='my-3'>
-              <Link to='/services/back-pain'>
-                <Card className='text-center'>
-                  <StaticImage
-                    src='../images/services/back-pain-1.jpeg'
-                    alt='back pain'
-                    layout='constrained'
-                    placeholder='blurred'
-                  />
-                  <Card.Body>
-                    <Card.Text>Back Pain & Neck Pain</Card.Text>
-                  </Card.Body>
-                </Card>
-              </Link>
-            </Col>
-            <Col className='my-3'>
-              <Link to='/services/arthritis'>
-                <Card className='text-center'>
-                  <StaticImage
-                    src='../images/services/arthritis-1.jpeg'
-                    alt='arthritis'
-                    layout='constrained'
-                    placeholder='blurred'
-                  />
-                  <Card.Body>
-                    <Card.Text>Arthritic Pain</Card.Text>
-                  </Card.Body>
-                </Card>
-              </Link>
-            </Col>
-            <Col className='my-3'>
-              <Link to='/services/shoulder-pain'>
-                <Card className='text-center'>
-                  <StaticImage
-                    src='../images/services/shoulder-pain-1.jpeg'
-                    alt='shoulder pain'
-                    layout='constrained'
-                    placeholder='blurred'
-                  />
-                  <Card.Body>
-                    <Card.Text>Shoulder Pain</Card.Text>
-                  </Card.Body>
-                </Card>
-              </Link>
-            </Col>
-            <Col className='my-3'>
-              <Link to='/services/trapped-nerve'>
-                <Card className='text-center'>
-                  <StaticImage
-                    src='../images/services/trapped-nerve-1.jpeg'
-                    alt='trapped nerves'
-                    layout='constrained'
-                    placeholder='blurred'
-                  />
-                  <Card.Body>
-                    <Card.Text>Trapped Nerves</Card.Text>
-                  </Card.Body>
-                </Card>
-              </Link>
-            </Col>
-            <Col className='my-3'>
-              <Link to='/services/injury-rehab'>
-                <Card className='text-center'>
-                  <StaticImage
-                    src='../images/services/injury-rehab-1.jpeg'
-                    alt='injury rehabilitation'
-                    layout='constrained'
-                    placeholder='blurred'
-                  />
-                  <Card.Body>
-                    <Card.Text>Injury Rehabilitation</Card.Text>
-                  </Card.Body>
-                </Card>
-              </Link>
-            </Col>
-          </Row>
+          {serviceBoxes}
           <Row className='my-3'>
             <p>
               We are able to help and treat a much wider variety of problems
@@ -179,6 +88,116 @@ const IndexPage = () => {
     </div>
   );
 };
+
+const serviceBoxes = (
+  <Row xs='2' md='3'>
+    <Col className='my-3'>
+      <Link to='/services/sciatica'>
+        <Card className='text-center'>
+          <StaticImage
+            src='../images/services/sciatica-1.jpeg'
+            alt='sciatica'
+            layout='constrained'
+            placeholder='blurred'
+          />
+          <Card.Body>
+            <Card.Text>Sciatica</Card.Text>
+          </Card.Body>
+        </Card>
+      </Link>
+    </Col>
+    <Col className='my-3'>
+      <Link to='/services/back-pain'>
+        <Card className='text-center'>
+          <StaticImage
+            src='../images/services/back-pain-1.jpeg'
+            alt='back pain'
+            layout='constrained'
+            placeholder='blurred'
+          />
+          <Card.Body>
+            <Card.Text>Back Pain & Neck Pain</Card.Text>
+          </Card.Body>
+        </Card>
+      </Link>
+    </Col>
+    <Col className='my-3'>
+      <Link to='/services/arthritis'>
+        <Card className='text-center'>
+          <StaticImage
+            src='../images/services/arthritis-1.jpeg'
+            alt='arthritis'
+            layout='constrained'
+            placeholder='blurred'
+          />
+          <Card.Body>
+            <Card.Text>Arthritic Pain</Card.Text>
+          </Card.Body>
+        </Card>
+      </Link>
+    </Col>
+    <Col className='my-3'>
+      <Link to='/services/shoulder-pain'>
+        <Card className='text-center'>
+          <StaticImage
+            src='../images/services/shoulder-pain-1.jpeg'
+            alt='shoulder pain'
+            layout='constrained'
+            placeholder='blurred'
+          />
+          <Card.Body>
+            <Card.Text>Shoulder Pain</Card.Text>
+          </Card.Body>
+        </Card>
+      </Link>
+    </Col>
+    <Col className='my-3'>
+      <Link to='/services/trapped-nerve'>
+        <Card className='text-center'>
+          <StaticImage
+            src='../images/services/trapped-nerve-1.jpeg'
+            alt='trapped nerves'
+            layout='constrained'
+            placeholder='blurred'
+          />
+          <Card.Body>
+            <Card.Text>Trapped Nerves</Card.Text>
+          </Card.Body>
+        </Card>
+      </Link>
+    </Col>
+    <Col className='my-3'>
+      <Link to='/services/injury-rehab'>
+        <Card className='text-center'>
+          <StaticImage
+            src='../images/services/injury-rehab-1.jpeg'
+            alt='injury rehabilitation'
+            layout='constrained'
+            placeholder='blurred'
+          />
+          <Card.Body>
+            <Card.Text>Injury Rehabilitation</Card.Text>
+          </Card.Body>
+        </Card>
+      </Link>
+    </Col>
+    <Col className='my-3'>
+      <Link to='/services/massage'>
+        <Card className='text-center'>
+          <StaticImage
+            src='../images/services/massage-therapy-1.jpeg'
+            alt='Clacton massage at COP clinic'
+            layout='constrained'
+            placeholder='blurred'
+          />
+          <Card.Body>
+            <Card.Text>Massage Therapy</Card.Text>
+          </Card.Body>
+        </Card>
+      </Link>
+    </Col>
+  </Row>
+);
 
 export default IndexPage;
 
