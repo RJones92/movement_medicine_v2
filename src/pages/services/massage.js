@@ -61,12 +61,12 @@ const MassagePage = () => {
             instantly relaxing, which will ensure you leave feeling refreshed
             and revitalized.
           </p>
-          <p className='lead'>Personalized Treatments</p>
+          <p className='lead'>Personalised Treatments</p>
           <p>
             We believe that no two bodies are the same, which is why we tailor
             the massage treatments to address your specific concerns. Whether
             you're dealing with chronic pain, stress, or simply need a moment to
-            unwind, our therapist Ami will create a personalized plan just for
+            unwind, our therapist Ami will create a personalised plan just for
             you. Experience the best massage in Clacton-on-Sea.
           </p>
         </Accordion.Body>
@@ -113,7 +113,7 @@ export const Head = () => {
   return (
     <SEO
       title='COP Clinic - Massage Therapy'
-      description="We believe that no two bodies are the same, which is why we tailor the massage treatments to address your specific concerns. Whether you're dealing with chronic pain, stress, or simply need a moment to unwind, our therapist Ami will create a personalized plan just for you. Experience the best massage in Clacton-on-Sea."
+      description="We believe that no two bodies are the same, which is why we tailor the massage treatments to address your specific concerns. Whether you're dealing with chronic pain, stress, or simply need a moment to unwind, our therapist Ami will create a personalised plan just for you. Experience the best massage in Clacton-on-Sea."
     />
   );
 };

@@ -7,7 +7,7 @@ import { SEO } from '../components/seo';
 
 const TheTeamPage = () => {
   return (
-    <Service bannerTitle='About Me' id='about-me' bgcolor='bg-white'>
+    <Service bannerTitle='The Team' id='the-team' bgcolor='bg-white'>
       {JamieHtml}
       {AmiHtml}
     </Service>
@@ -150,5 +150,5 @@ const AmiHtml = (
 export default TheTeamPage;
 
 export const Head = () => {
-  return <SEO title='COP Clinic - About Me' />;
+  return <SEO title='COP Clinic - The Team' />;
 };
