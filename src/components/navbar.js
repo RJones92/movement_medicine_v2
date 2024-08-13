@@ -52,10 +52,10 @@ export default function NavigationBar() {
                 Find Us
               </Link>
             </Nav.Item>
-            <Nav.Item as='li' eventKey='/theTeam'>
+            <Nav.Item as='li' eventKey='/the-team'>
               <Link
-                to='/theTeam'
-                key='theTeam'
+                to='/the-team'
+                key='the-team'
                 className='nav-link'
                 activeClassName='active'
               >

@@ -340,7 +340,7 @@ const SciaticaPage = () => {
                   It is important to note that finding the right sleep position
                   for sciatica can take some trial and error, and it may be
                   helpful to consult with a healthcare professional for
-                  personalized advice and recommendations.
+                  personalised advice and recommendations.
                 </p>
               </Accordion.Body>
             </Accordion.Item>
@@ -510,7 +510,7 @@ export const Head = () => {
   return (
     <SEO
       title='COP Clinic - Sciatica'
-      description="If you're experiencing sciatica pain, an Osteopath can help. We specialise in treating musculoskeletal issues, including sciatica. Through personalized and non-invasive treatments, we can help relieve your pain and improve your mobility. Contact us today to schedule an appointment and take the first step towards a pain-free life."
+      description="If you're experiencing sciatica pain, an Osteopath can help. We specialise in treating musculoskeletal issues, including sciatica. Through personalised and non-invasive treatments, we can help relieve your pain and improve your mobility. Contact us today to schedule an appointment and take the first step towards a pain-free life."
     />
   );
 };
