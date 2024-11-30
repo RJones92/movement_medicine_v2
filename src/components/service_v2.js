@@ -13,6 +13,7 @@ const Service_v2 = ({
   bannerTitle,
   accordion,
   staticImage,
+  notice, // a prop for displaying e.g. vouchers at the top of the service page
   children,
 }) => {
   const bannerId = id + `-banner`;
@@ -28,10 +29,12 @@ const Service_v2 = ({
       placeholder='blurred'
     />
   );
+
   return (
     <div id={id}>
       <Layout bannerTitle={bannerTitle} id={bannerId}>
         <Section id={contentsId} bgcolor={bgcolor}>
+          {notice}
           <Row className='justify-content-center'>
             <Col md='4' className='pb-3'>
               {image}

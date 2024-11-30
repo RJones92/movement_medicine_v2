@@ -3,6 +3,8 @@ import Service from '../../components/service_v2';
 import Accordion from 'react-bootstrap/Accordion';
 import { StaticImage } from 'gatsby-plugin-image';
 import { SEO } from '../../components/seo';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 const MassagePage = () => {
   const accordion = (
@@ -74,6 +76,66 @@ const MassagePage = () => {
     </Accordion>
   );
 
+  const payPalStyle = {
+    textAlign: 'center',
+    border: 'none',
+    borderRadius: '1.5rem',
+    minWidth: '11.625rem',
+    padding: '0.2rem',
+    height: '3.125rem',
+    fontWeight: 'bold',
+    backgroundColor: '#FFD140',
+    color: '#000000',
+    fontFamily: '"Helvetica Neue", Arial, sans-serif',
+    fontSize: '1.125rem',
+    lineHeight: '1.5rem',
+    cursor: 'pointer',
+  };
+
+  const paypalButton = (
+    <div>
+      <form
+        action='https://www.paypal.com/ncp/payment/9RWZGAWQLGHS8'
+        method='post'
+        target='_top'
+        style={{
+          display: 'inline-grid',
+          justifyItems: 'center',
+          alignContent: 'start',
+          gap: '0.5rem',
+        }}
+      >
+        <input type='submit' value='Pay Now' style={payPalStyle} />
+        <img
+          src='https://www.paypalobjects.com/images/Debit_Credit_APM.svg'
+          alt='cards'
+        />
+        <section>
+          Powered by
+          <img
+            src='https://www.paypalobjects.com/paypal-ui/logos/svg/paypal-wordmark-color.svg'
+            alt='paypal'
+            style={{
+              height: '0.875rem',
+              verticalAlign: 'middle',
+            }}
+          />
+        </section>
+      </form>
+    </div>
+  );
+
+  const payPalNotice = (
+    <Row className='pt-3 pb-5 justify-content-center'>
+      <Col md='8' className='pb-3 d-flex text-center justify-content-center'>
+        <h2>Gift vouchers now available for massage appointments!</h2>
+      </Col>
+      <Col md='4' className='col-auto'>
+        <Row className='justify-content-center'>{paypalButton}</Row>
+      </Col>
+    </Row>
+  );
+
   return (
     <Service
       bannerTitle='Massage Therapy'
@@ -86,6 +148,7 @@ const MassagePage = () => {
         layout='constrained'
         placeholder='blurred'
       />
+      notice={payPalNotice}
     >
       <p>
         At the COP Clinic, we highly recommend massage treatments for many of
