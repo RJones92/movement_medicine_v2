@@ -110,7 +110,7 @@ const FaqPage = () => {
         <Accordion.Item eventKey='7'>
           <Accordion.Header>How much does it cost?</Accordion.Header>
           <Accordion.Body>
-            <p>Osteopathy appointment £47.</p>
+            <p>Osteopathy appointment £50.</p>
             <p>Massage appointment £45.</p>
           </Accordion.Body>
         </Accordion.Item>
