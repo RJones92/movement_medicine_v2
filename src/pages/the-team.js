@@ -43,20 +43,22 @@ const JamieHtml = (
       </Col>
     </Row>
     <Row className='my-3'>
-      <p>
-        I utilise a variety of skills and treatments, such as:
-        <ul>
-          <li>Osteopathic Manipulation</li>
-          <li>Soft tissue techniques</li>
-          <li>Sports massage, </li>
-          <li>Dry needling (medical acupuncture)</li>
-          <li>Exercise prescription</li>
-          <li>CBT (in relation to pain)</li>
-          <li>Therapeutic ultrasound</li>
-          <li>Electrotherapy</li>
-          <li>I am soon taking a course in Cognitive Functional Therapy.</li>
-        </ul>
-      </p>
+      <Col>
+        <p>
+          I utilise a variety of skills and treatments, such as:
+          <ul>
+            <li>Osteopathic Manipulation</li>
+            <li>Soft tissue techniques</li>
+            <li>Sports massage, </li>
+            <li>Dry needling (medical acupuncture)</li>
+            <li>Exercise prescription</li>
+            <li>CBT (in relation to pain)</li>
+            <li>Therapeutic ultrasound</li>
+            <li>Electrotherapy</li>
+            <li>I am soon taking a course in Cognitive Functional Therapy.</li>
+          </ul>
+        </p>
+      </Col>
     </Row>
     <Row className='my-3'>
       <Col>
@@ -84,14 +86,14 @@ const JamieHtml = (
 
 const AmiHtml = (
   <div>
-    <Row className='pt-3'>
+    <Row className='my-3'>
       <Col>
         <StaticImage
-          src='../images/Ami_Head_Shot.jpg'
+          src='../images/Ami_Head_Shot_002.jpg'
           alt='Picture of Amie, Massage Therapist at Clacton Osteopathy & Physiotherapy clinic.'
           layout='constrained'
           placeholder='blurred'
-          className='float-end'
+          className='float-end m-3'
           height={250}
         />
         <p className='lead'>Ami - Massage Therapist</p>
