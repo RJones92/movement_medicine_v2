@@ -108,15 +108,45 @@ const person2TextHtml = (
   </>
 );
 
+const person3TextHtml = (
+  <>
+    <p className='lead'>Josh - Osteopath</p>
+
+    <p>
+      I graduated from the British School of Osteopathy (now the University
+      College of Osteopathy) in 2018 and have since built a broad and hands-on
+      skill set by working in a variety of clinics and unique locations — from
+      the side of a mountain in the Azores to two years practicing in Australia.
+      These experiences have helped me develop a flexible, adaptable approach to
+      treatment, suited to people from all walks of life.
+    </p>
+    <p>
+      I have a particular interest in helping those who suffer from headaches
+      and migraines, using a combination of gentle manual techniques, lifestyle
+      advice, and tailored exercise to relieve tension, improve movement, and
+      reduce recurrence.
+    </p>
+    <p>
+      My goal is simple: to help you get out of the treatment room and back to
+      doing what you love as quickly as possible. Every treatment plan and
+      exercise program is tailored to fit your body and your lifestyle — not the
+      other way around. I believe effective care should feel achievable,
+      practical, and personal.
+    </p>
+    <p>
+      I look forward to helping you move better, feel better, and get back to
+      living your life to the fullest.
+    </p>
+  </>
+);
+
 const TheTeamPage = () => {
   const [activePerson, setActivePerson] = React.useState('person1');
 
   const personText = {
     person1: person1TextHtml,
     person2: person2TextHtml,
-    // TODO: person3 text
-    person3:
-      'Person 3 leads marketing and loves connecting people through creative campaigns 🎯.',
+    person3: person3TextHtml,
   };
 
   const person1ImageHtml = (
@@ -126,7 +156,7 @@ const TheTeamPage = () => {
         onClick={() => setActivePerson('person1')}
       >
         <StaticImage
-          src='../images/Jamie_Head_Shot_High_Res.jpg'
+          src='../images/headshot/Jamie_Head_Shot_High_Res.jpg'
           alt='Picture of Jamie Acres, registered Osteopath at Clacton Osteopathy & Physiotherapy clinic.'
           layout='constrained'
           placeholder='blurred'
@@ -145,20 +175,9 @@ const TheTeamPage = () => {
         style={{ cursor: 'pointer' }}
         onClick={() => setActivePerson('person2')}
       >
-        {/* TODO picture of Ami doesn't fit nicely. Make images same size somehow */}
-        {/* <StaticImage
-          src='../images/Ami_Head_Shot_002.jpg'
-          alt='Picture of Amie, Massage Therapist at Clacton Osteopathy & Physiotherapy clinic.'
-          layout='constrained'
-          placeholder='blurred'
-          className={`float-end  ${
-            activePerson === 'person2' ? 'border border-primary border-3' : ''
-          }`}
-          height={250}
-        /> */}
         <StaticImage
-          src='../images/Jamie_Head_Shot_High_Res.jpg'
-          alt='Picture of Jamie Acres, registered Osteopath at Clacton Osteopathy & Physiotherapy clinic.'
+          src='../images/headshot/ami_landscape.jpg'
+          alt='Picture of Amie, Massage Therapist at Clacton Osteopathy & Physiotherapy clinic.'
           layout='constrained'
           placeholder='blurred'
           className={`float-end  ${
@@ -177,8 +196,8 @@ const TheTeamPage = () => {
         onClick={() => setActivePerson('person3')}
       >
         <StaticImage
-          src='../images/Jamie_Head_Shot_High_Res.jpg'
-          alt='Picture of Jamie Acres, registered Osteopath at Clacton Osteopathy & Physiotherapy clinic.'
+          src='../images/headshot/silhoette_landscape.png'
+          alt='Picture of Josh, registered Osteopath at Clacton Osteopathy & Physiotherapy clinic.'
           layout='constrained'
           placeholder='blurred'
           className={`float-end  ${
@@ -198,6 +217,7 @@ const TheTeamPage = () => {
       {person3ImageHtml}
     </div>
   );
+
   const mobileHtml = (
     //  d-md-none hides the carousel for medium and bigger screens
     <div className='d-md-none mb-4'>
@@ -213,9 +233,10 @@ const TheTeamPage = () => {
             style={{ cursor: 'pointer' }}
           >
             <StaticImage
-              src='../images/Jamie_Head_Shot_High_Res.jpg'
-              // TODO change alt text
-              alt='Jamie'
+              src='../images/headshot/Jamie_Head_Shot_High_Res.jpg'
+              alt='Picture of Jamie Acres, registered Osteopath at Clacton Osteopathy & Physiotherapy clinic.'
+              layout='constrained'
+              placeholder='blurred'
               className='mx-auto d-block'
               height={250}
             />
@@ -226,10 +247,11 @@ const TheTeamPage = () => {
             onClick={() => setActivePerson('person2')}
             style={{ cursor: 'pointer' }}
           >
-            {/* TODO change image */}
             <StaticImage
-              src='../images/Jamie_Head_Shot_High_Res.jpg'
-              alt='Person 2'
+              src='../images/headshot/ami_landscape.jpg'
+              alt='Picture of Amie, Massage Therapist at Clacton Osteopathy & Physiotherapy clinic.'
+              layout='constrained'
+              placeholder='blurred'
               className='mx-auto d-block'
               height={250}
             />
@@ -240,11 +262,11 @@ const TheTeamPage = () => {
             onClick={() => setActivePerson('person3')}
             style={{ cursor: 'pointer' }}
           >
-            {/* TODO change image */}
-
             <StaticImage
-              src='../images/Jamie_Head_Shot_High_Res.jpg'
-              alt='Person 3'
+              src='../images/headshot/silhoette_landscape.png'
+              alt='Picture of Josh, registered Osteopath at Clacton Osteopathy & Physiotherapy clinic.'
+              layout='constrained'
+              placeholder='blurred'
               className='mx-auto d-block'
               height={250}
             />
