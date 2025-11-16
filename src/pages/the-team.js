@@ -1,8 +1,6 @@
 import { StaticImage } from 'gatsby-plugin-image';
 import * as React from 'react';
 import Service from '../components/service';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 import Carousel from 'react-bootstrap/Carousel';
 import { SEO } from '../components/seo';
 
@@ -196,7 +194,7 @@ const TheTeamPage = () => {
         onClick={() => setActivePerson('person3')}
       >
         <StaticImage
-          src='../images/headshot/silhoette_landscape.png'
+          src='../images/headshot/Josh_Head_Shot.png'
           alt='Picture of Josh, registered Osteopath at Clacton Osteopathy & Physiotherapy clinic.'
           layout='constrained'
           placeholder='blurred'
@@ -263,7 +261,7 @@ const TheTeamPage = () => {
             style={{ cursor: 'pointer' }}
           >
             <StaticImage
-              src='../images/headshot/silhoette_landscape.png'
+              src='../images/headshot/Josh_Head_Shot.png'
               alt='Picture of Josh, registered Osteopath at Clacton Osteopathy & Physiotherapy clinic.'
               layout='constrained'
               placeholder='blurred'
