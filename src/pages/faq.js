@@ -118,7 +118,7 @@ const FaqPage = () => {
           <Accordion.Header>Do you offer home visits?</Accordion.Header>
           <Accordion.Body>
             Yes, we will come to those who are unable to attend the clinic. We
-            charge £65 for a home visit appointment. If you require this
+            charge £70 for a home visit appointment. If you require this
             service, please call in and we will arrange a suitable time to come
             out to you.
           </Accordion.Body>
