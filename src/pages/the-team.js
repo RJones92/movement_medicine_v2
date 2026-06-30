@@ -106,45 +106,12 @@ const person2TextHtml = (
   </>
 );
 
-const person3TextHtml = (
-  <>
-    <p className='lead'>Josh - Osteopath</p>
-
-    <p>
-      I graduated from the British School of Osteopathy (now the University
-      College of Osteopathy) in 2018 and have since built a broad and hands-on
-      skill set by working in a variety of clinics and unique locations — from
-      the side of a mountain in the Azores to two years practicing in Australia.
-      These experiences have helped me develop a flexible, adaptable approach to
-      treatment, suited to people from all walks of life.
-    </p>
-    <p>
-      I have a particular interest in helping those who suffer from headaches
-      and migraines, using a combination of gentle manual techniques, lifestyle
-      advice, and tailored exercise to relieve tension, improve movement, and
-      reduce recurrence.
-    </p>
-    <p>
-      My goal is simple: to help you get out of the treatment room and back to
-      doing what you love as quickly as possible. Every treatment plan and
-      exercise program is tailored to fit your body and your lifestyle — not the
-      other way around. I believe effective care should feel achievable,
-      practical, and personal.
-    </p>
-    <p>
-      I look forward to helping you move better, feel better, and get back to
-      living your life to the fullest.
-    </p>
-  </>
-);
-
 const TheTeamPage = () => {
   const [activePerson, setActivePerson] = React.useState('person1');
 
   const personText = {
     person1: person1TextHtml,
     person2: person2TextHtml,
-    person3: person3TextHtml,
   };
 
   const person1ImageHtml = (
@@ -187,32 +154,11 @@ const TheTeamPage = () => {
     </div>
   );
 
-  const person3ImageHtml = (
-    <div className='col-6 col-sm-4 mb-4'>
-      <div
-        style={{ cursor: 'pointer' }}
-        onClick={() => setActivePerson('person3')}
-      >
-        <StaticImage
-          src='../images/headshot/Josh_Head_Shot.png'
-          alt='Picture of Josh, registered Osteopath at Clacton Osteopathy & Physiotherapy clinic.'
-          layout='constrained'
-          placeholder='blurred'
-          className={`float-end  ${
-            activePerson === 'person3' ? 'border border-primary border-3' : ''
-          }`}
-          height={250}
-        />
-      </div>
-    </div>
-  );
-
   const desktopHtml = (
     //  d-none and d-md-flex hides the desktop div for smaller than md screens
     <div className='row justify-content-center text-center d-none d-md-flex'>
       {person1ImageHtml}
       {person2ImageHtml}
-      {person3ImageHtml}
     </div>
   );
 
@@ -248,21 +194,6 @@ const TheTeamPage = () => {
             <StaticImage
               src='../images/headshot/ami_landscape.jpg'
               alt='Picture of Amie, Massage Therapist at Clacton Osteopathy & Physiotherapy clinic.'
-              layout='constrained'
-              placeholder='blurred'
-              className='mx-auto d-block'
-              height={250}
-            />
-          </div>
-        </Carousel.Item>
-        <Carousel.Item>
-          <div
-            onClick={() => setActivePerson('person3')}
-            style={{ cursor: 'pointer' }}
-          >
-            <StaticImage
-              src='../images/headshot/Josh_Head_Shot.png'
-              alt='Picture of Josh, registered Osteopath at Clacton Osteopathy & Physiotherapy clinic.'
               layout='constrained'
               placeholder='blurred'
               className='mx-auto d-block'
